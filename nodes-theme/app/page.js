@@ -1,4 +1,5 @@
 import CustomButton from "@/components/CustomButton";
+import Task from "@/components/Task";
 import HillImg from "@/public/hill.jpg";
 import Image from "next/image";
 
@@ -111,6 +112,12 @@ export default function Home() {
               fill="#D33C85"
             />
           </svg>
+        </div>
+        <div className="max-container">
+          <div className="">
+            <Image />
+          </div>
+          <Task />
         </div>
       </div>
     </>
