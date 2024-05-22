@@ -1,9 +1,9 @@
 import CustomButton from "./CustomButton";
 
-function Task() {
+function Task({heading}) {
   return (
     <div className="w-[487px] h-[270px] flex flex-col gap-6 items-start shrink-0">
-      <h2 className="text-typography-heading text-lg_2x font-medium">Never miss any task</h2>
+      <h2 className="text-typography-heading text-lg_2x font-medium">{heading}</h2>
       <p className="text-typography-paragraph-soft">
         Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin
         faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam

@@ -1,7 +1,9 @@
 import CustomButton from "@/components/CustomButton";
+import CustomImage from "@/components/CustomImage";
 import Task from "@/components/Task";
 import HillImg from "@/public/hill.jpg";
 import Image from "next/image";
+import TasksImg from "@/public/tasks.png";
 
 export default function Home() {
   return (
@@ -113,11 +115,9 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div className="max-container">
-          <div className="">
-            <Image />
-          </div>
-          <Task />
+        <div className="max-container flex justify-between items-center">
+          <CustomImage path={TasksImg} />
+          <Task heading={'Never miss any task'} />
         </div>
       </div>
     </>
