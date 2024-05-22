@@ -505,5 +505,8 @@
   .text-fill-color-transparent {
   -webkit-text-fill-color: transparent;
   }
+  .btn {
+    @apply py-3 px-6 rounded-[8px];
+  }
 
 }

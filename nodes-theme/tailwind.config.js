@@ -6,10 +6,24 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      xs: ["14px", "20px"],
+      sm: ["16px", "24px"],
+      md: ["18px", "28px"],
+      lg: ["20px", "34px"],
+      lg_2x: ["36px", "52px"],
+      lg_3x: ["48px", "64px"],
+      lg_4x: ["64px", "84px"],
+      lg_5x: ["72px", "108px"],
+      lg_6x: ["96px", "132px"],
+    },
     extend: {
       backgroundImage: {
         "orchid-twilight":
           "linear-gradient(75deg, #C165DD 22.25%, #5C27FE 79.46%)",
+        website: "linear-gradient(72deg, #658DF5 59.9%, #1153FC 85.95%)",
+        "gradient-3":
+          "linear-gradient(90deg, #4484FF -0.55%, #44B0FF 22.86%, #FF44EC 48.36%, #44A5FF 73.33%, #F2FF5E 99.34%)",
       },
       boxShadow: {
         "background-xsm": "0 2px 2px 2px rgba(0, 0, 0, 0.16)",
