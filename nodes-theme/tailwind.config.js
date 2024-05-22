@@ -24,6 +24,8 @@ module.exports = {
         website: "linear-gradient(72deg, #658DF5 59.9%, #1153FC 85.95%)",
         "gradient-3":
           "linear-gradient(90deg, #4484FF -0.55%, #44B0FF 22.86%, #FF44EC 48.36%, #44A5FF 73.33%, #F2FF5E 99.34%)",
+        "gradient-4":
+          "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 59.25%, #ffffff 80.63%, lightgray 77.404% 69.12%, #F0F1F3, #FFF)",
       },
       boxShadow: {
         "background-xsm": "0 2px 2px 2px rgba(0, 0, 0, 0.16)",
