@@ -6,6 +6,14 @@ import Image from "next/image";
 import TasksImg from "@/public/tasks.png";
 import DocuVerticalImg from "@/public/docu-vertical.png";
 import DocuHorizontal from "@/public/docu-horizontal.png";
+import Nuxt from "@/public/logos/nuxt.png";
+import Miro from "@/public/logos/miro.png";
+import Lottie from "@/public/logos/lottie.png";
+import Angel from "@/public/logos/angel.png";
+import Drille from "@/public/logos/drille.png";
+import Kinsta from "@/public/logos/kinsta.png";
+import Behance from "@/public/logos/behance.png";
+
 import DocumentationCard from "@/components/DocumentationCard";
 
 export default function Home() {
@@ -169,7 +177,15 @@ export default function Home() {
             <DocumentationCard path={DocuHorizontal} size={"486"} />
           </div>
         </div>
-        
+        <div className="max-container flex justify-between items-center bg-background-stroke-middle mb-[200px]">
+          <Image src={Nuxt} />
+          <Image src={Miro} />
+          <Image src={Lottie} />
+          <Image src={Drille} />
+          <Image src={Kinsta} />
+          <Image src={Angel} />
+          <Image src={Behance} />
+        </div>
       </div>
     </>
   );
