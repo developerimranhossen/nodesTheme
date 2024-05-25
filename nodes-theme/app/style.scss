@@ -1,0 +1,11 @@
+// Global
+// Position spesific
+// Module spesific
+.nt-hero{
+    h1{
+        @apply text-lg_4x text-center;
+    }
+    .nt-main-heading{
+        @apply relative;
+    }
+}
