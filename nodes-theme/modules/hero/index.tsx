@@ -1,16 +1,19 @@
 import CustomButton from "../../components/CustomButton";
 
-const App = () => {
+const App = ({data}) => {
+  console.log("data: ", data)
   return (
     <div className='nt-module nt-hero'>
         <p className="nt-pre-heading">
-            Smart web builder, made for Developers
+            {data.pre_heading}
         </p>
         <div>
-          <div className="nt-main-heading">
-            <h1>
-              Create any 
-              <span className="nt-text-glow"> website
+          <div className="nt-main-heading bg-background-fill-central">
+            <h1 className="">
+              {data.heading}
+              <br/>
+              You may use 
+              <span className="nt-text-glow"> static design
                 <svg
                   className="absolute -top-5 left-[330px]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,23 +70,23 @@ const App = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-              </span> with no-limits
+              </span> like this line.
             </h1>
           </div>
           <div className="">
             <CustomButton className="">
-              Explore templates
+              {data.button[0]}
             </CustomButton>
             <CustomButton className="">
-              Start build today
+              {data.button[1]}
             </CustomButton>
           </div>
           <div className="">
             <p className="">
-              60 Days free trial
+              {data.message[0]}
             </p>
             <p className="">
-              No credit card required
+              {data.message[1]}
             </p>
           </div>
         </div>

@@ -1,7 +1,12 @@
 // Global
+// Buttons
+.nt-btn{
+    @apply border rounded;
+}
 // Position spesific
 // Module spesific
 .nt-hero{
+    @apply text-center;
     h1{
         @apply text-lg_4x text-center;
     }

@@ -18,14 +18,22 @@ import DocumentationCard from "../components/DocumentationCard";
 import ProgramCard from "../components/ProgramCard";
 import Hero from '../modules/hero'
 
+// Data sample 
+const hero = {
+  pre_heading: "Create your website",
+  heading: "With the power of Nodes Theme",
+  button: ["Try for free", "Buy it now"],
+  message: ['Its easy to use and designed considering your backend datastructure', 'Powered with tailwind-css & scss. Of course its the Next']
+}
+
 export default function Home() {
   return (
     <>
-      <div className="nt-page nt-home">
+      <div className="nt-page nt-home bg-background-fill-central">
         <section className="nt-section nt-hero">
           <div className="nt-row">
             <div className="nt-col nt-hero-A">
-              <Hero/>
+              <Hero data={hero}/>
             </div>{/* End hero-A */}
           </div>{/* End row */}
         </section>{/* End section Hero */}
