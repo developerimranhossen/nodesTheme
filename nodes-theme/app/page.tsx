@@ -1,6 +1,6 @@
-import CustomButton from "@/components/CustomButton";
-import CustomImage from "@/components/CustomImage";
-import Task from "@/components/Task";
+import CustomButton from "../components/CustomButton";
+import CustomImage from "../components/CustomImage";
+import Task from "../components/Task";
 import HillImg from "@/public/hill.jpg";
 import Image from "next/image";
 import TasksImg from "@/public/tasks.png";
@@ -16,6 +16,7 @@ import Behance from "@/public/logos/behance.png";
 
 import DocumentationCard from "@/components/DocumentationCard";
 import ProgramCard from "@/components/ProgramCard";
+import UseCasesCard from "@/components/UseCasesCard";
 
 export default function Home() {
   return (
@@ -111,7 +112,7 @@ export default function Home() {
         <div className="flex max-container py-0 mt-[120px] mb-[60px] relative">
           <div className="bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px]"></div>
           <div className="w-[1200px] h-[716px] absolute">
-            <Image src={HillImg} className="rounded-[18px] shadow-2xl" fill />
+            <Image src={HillImg}  className="rounded-[18px]  shadow-2xl" fill />
           </div>
           <svg
             className="absolute left-1/2 top-1/2  -translatex-1/2 -translate-y-1/2"
@@ -228,6 +229,20 @@ export default function Home() {
             <ProgramCard />
             <ProgramCard />
           </div>
+        </div>
+        <div className="max-container flex flex-col justify-center items-center gap-10">
+          <div className="flex flex-col items-center gap-3 w-[588px] text-center">
+            <p className="text-component-text-primary text-lg">Use cases</p>
+            <h1 className="text-typography-heading text-lg_2x">
+              For teams who create training videos at scale
+            </h1>
+          </div>
+          <div className="">
+            <UseCasesCard bg={'component-fill-primary'}>
+              <p className="">Learning and development</p>
+            </UseCasesCard>
+          </div>
+          <div className=""></div>
         </div>
       </div>
     </>
