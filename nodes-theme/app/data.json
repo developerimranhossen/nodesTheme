@@ -59,5 +59,12 @@
             "tags":"",
             "img":""
         }
-    ]
+    ],
+    "users": {
+        "supper_admin": {
+            "name": "Maruf",
+            "email": "admin@domain.com",
+            "pass": "sdo7rei&%*kjhsdfg"
+        }
+    }
 }
