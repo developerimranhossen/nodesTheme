@@ -1,112 +1,59 @@
-import CustomButton from "@/components/CustomButton";
-import CustomImage from "@/components/CustomImage";
-import Task from "@/components/Task";
-import HillImg from "@/public/hill.jpg";
-import Image from "next/image";
-import TasksImg from "@/public/tasks.png";
-import DocuVerticalImg from "@/public/docu-vertical.png";
-import DocuHorizontal from "@/public/docu-horizontal.png";
-import Nuxt from "@/public/logos/nuxt.png";
-import Miro from "@/public/logos/miro.png";
-import Lottie from "@/public/logos/lottie.png";
-import Angel from "@/public/logos/angel.png";
-import Drille from "@/public/logos/drille.png";
-import Kinsta from "@/public/logos/kinsta.png";
-import Behance from "@/public/logos/behance.png";
 
-import DocumentationCard from "@/components/DocumentationCard";
-import ProgramCard from "@/components/ProgramCard";
+import CustomImage from "../components/CustomImage";
+import Task from "../components/Task";
+import HillImg from "../public/hill.jpg";
+import Image from "next/image";
+import TasksImg from "../public/tasks.png";
+import DocuVerticalImg from "../public/docu-vertical.png";
+import DocuHorizontal from "../public/docu-horizontal.png";
+import Nuxt from "../public/logos/nuxt.png";
+import Miro from "../public/logos/miro.png";
+import Lottie from "../public/logos/lottie.png";
+import Angel from "../public/logos/angel.png";
+import Drille from "../public/logos/drille.png";
+import Kinsta from "../public/logos/kinsta.png";
+import Behance from "../public/logos/behance.png";
+
+import DocumentationCard from "../components/DocumentationCard";
+import ProgramCard from "../components/ProgramCard";
+import Hero from '../modules/hero'
+
+// Data sample 
+const hero = {
+  pre_heading: "Create your website",
+  heading: "With the power of Nodes Theme",
+  button: ["Try for free", "Buy it now"],
+  message: ['Its easy to use and designed considering your backend datastructure', 'Powered with tailwind-css & scss. Of course its the Next']
+}
 
 export default function Home() {
   return (
     <>
-      <div className="nt-page-home">
-        <div className="max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center">
-          <p className="text-typography-sub-heading-soft text-lg">
-            Smart web builder, made for Developers
-          </p>
-          <div className="relative">
-            <h1 className="text-typography-display text-lg_4x">
-              Create any{" "}
-              <span className="bg-website bg-clip-text text-fill-color-transparent font-medium">
-                website
-              </span>{" "}
-              with no-limits
-            </h1>
-            <svg
-              className="absolute -top-5 left-[330px]"
-              xmlns="http://www.w3.org/2000/svg"
-              width="335"
-              height="158"
-              viewBox="0 0 335 158"
-              fill="none"
-            >
-              <g opacity="0.3">
-                <g filter="url(#filter0_f_22003_145953)">
-                  <rect
-                    width="234.998"
-                    height="56.6767"
-                    transform="matrix(1 -6.76715e-05 3.00767e-05 1 50 50.6699)"
-                    fill="url(#paint0_linear_22003_145953)"
-                  />
-                </g>
-              </g>
-              <defs>
-                <filter
-                  id="filter0_f_22003_145953"
-                  x="0"
-                  y="0.654297"
-                  width="335"
-                  height="156.692"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="BackgroundImageFix"
-                    result="shape"
-                  />
-                  <feGaussianBlur
-                    stdDeviation="25"
-                    result="effect1_foregroundBlur_22003_145953"
-                  />
-                </filter>
-                <linearGradient
-                  id="paint0_linear_22003_145953"
-                  x1="-1.28696"
-                  y1="28.3384"
-                  x2="233.454"
-                  y2="28.3383"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#44BCFF" />
-                  <stop offset="0.234375" stop-color="#44B0FF" />
-                  <stop offset="0.489583" stop-color="#FF44EC" />
-                  <stop offset="0.739583" stop-color="#FF44EC" />
-                  <stop offset="1" stop-color="#FF675E" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex justify-center items-start gap-6">
-            <CustomButton className="border border-component-stroke-secondary-soft bg-component-fill-secondary-soft text-component-text-secondary leading-6 ">
-              Explore templates
-            </CustomButton>
-            <CustomButton className="bg-component-fill-primary text-component-text-light-fixed leading-6">
-              Start build today
-            </CustomButton>
-          </div>
-          <div className="flex justify-center items-center gap-10">
-            <p className="text-typography-paragraph-soft text-md">
-              60 Days free trial
-            </p>
-            <p className="text-typography-paragraph-soft text-md">
-              No credit card required
-            </p>
-          </div>
-        </div>
+      <div className="nt-page nt-home bg-background-fill-central">
+        <section className="nt-section nt-hero">
+          <div className="nt-row">
+            <div className="nt-col nt-hero-A">
+              <Hero data={hero}/>
+            </div>{/* End hero-A */}
+          </div>{/* End row */}
+        </section>{/* End section Hero */}
+        <section className="nt-section">
+
+        </section>{/*end media*/}
+        <section className="nt-section">
+
+        </section>{/*end blogs*/}
+        <section className="nt-section">
+
+        </section>{/*end Gallery*/}
+        <section className="nt-section">
+
+        </section>{/*end Partners*/}
+        <section className="nt-section">
+
+        </section>{/*end Features*/}
+
+        
 
         <div className="flex max-container py-0 mt-[120px] mb-[60px] relative">
           <div className="bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px]"></div>
