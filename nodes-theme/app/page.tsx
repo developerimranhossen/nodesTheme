@@ -1,6 +1,6 @@
 import CustomImage from "../components/CustomImage";
 import Task from "../components/Task";
-import HillImg from "../public/hill.jpg";
+
 import Image from "next/image";
 import TasksImg from "../public/tasks.png";
 import DocuVerticalImg from "../public/docu-vertical.png";
