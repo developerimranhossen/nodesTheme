@@ -19,8 +19,6 @@ import Hero from '../modules/hero'
 
 
 
-import DocumentationCard from "@/components/DocumentationCard";
-import ProgramCard from "@/components/ProgramCard";
 
 export default function Home() {
   return (
@@ -96,12 +94,7 @@ export default function Home() {
             </svg>
           </div>
           <div className="flex justify-center items-start gap-6">
-            <CustomButton className="border border-component-stroke-secondary-soft bg-component-fill-secondary-soft text-component-text-secondary leading-6 ">
-              Explore templates
-            </CustomButton>
-            <CustomButton className="bg-component-fill-primary text-component-text-light-fixed leading-6">
-              Start build today
-            </CustomButton>
+            
           </div>
           <div className="flex justify-center items-center gap-10">
             <p className="text-typography-paragraph-soft text-md">
@@ -116,7 +109,7 @@ export default function Home() {
         <div className="flex max-container py-0 mt-[120px] mb-[60px] relative">
           <div className="bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px]"></div>
           <div className="w-[1200px] h-[716px] absolute">
-            <Image src={HillImg} className="rounded-[18px] shadow-2xl" fill />
+            
           </div>
           <svg
             className="absolute left-1/2 top-1/2  -translatex-1/2 -translate-y-1/2"
@@ -183,13 +176,7 @@ export default function Home() {
           </div>
         </div>
         <div className="max-container flex justify-between items-center bg-background-stroke-middle">
-          <Image src={Nuxt} />
-          <Image src={Miro} />
-          <Image src={Lottie} />
-          <Image src={Drille} />
-          <Image src={Kinsta} />
-          <Image src={Angel} />
-          <Image src={Behance} />
+          
         </div>
         <div className="max-container flex flex-col justify-center items-center gap-10">
           <div className="flex flex-col justify-center items-center gap-[18px] w-[588px] ">
