@@ -1,18 +1,23 @@
-import CustomButton from "@/components/CustomButton";
-import CustomImage from "@/components/CustomImage";
-import Task from "@/components/Task";
-import HillImg from "@/public/hill.jpg";
+import CustomImage from "../components/CustomImage";
+import Task from "../components/Task";
+import HillImg from "../public/hill.jpg";
 import Image from "next/image";
-import TasksImg from "@/public/tasks.png";
-import DocuVerticalImg from "@/public/docu-vertical.png";
-import DocuHorizontal from "@/public/docu-horizontal.png";
-import Nuxt from "@/public/logos/nuxt.png";
-import Miro from "@/public/logos/miro.png";
-import Lottie from "@/public/logos/lottie.png";
-import Angel from "@/public/logos/angel.png";
-import Drille from "@/public/logos/drille.png";
-import Kinsta from "@/public/logos/kinsta.png";
-import Behance from "@/public/logos/behance.png";
+import TasksImg from "../public/tasks.png";
+import DocuVerticalImg from "../public/docu-vertical.png";
+import DocuHorizontal from "../public/docu-horizontal.png";
+import Nuxt from "../public/logos/nuxt.png";
+import Miro from "../public/logos/miro.png";
+import Lottie from "../public/logos/lottie.png";
+import Angel from "../public/logos/angel.png";
+import Drille from "../public/logos/drille.png";
+import Kinsta from "../public/logos/kinsta.png";
+import Behance from "../public/logos/behance.png"; 
+
+import DocumentationCard from "../components/DocumentationCard";
+import ProgramCard from "../components/ProgramCard";
+import Hero from '../modules/hero'
+
+
 
 import DocumentationCard from "@/components/DocumentationCard";
 import ProgramCard from "@/components/ProgramCard";
