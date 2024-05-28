@@ -28,6 +28,12 @@
     "**/*.ts",
     "**/*.tsx"
   ],
+<<<<<<< HEAD
+=======
+  "paths": {
+    "@/*": ["./*"]
+  },
+>>>>>>> 9ebcb4165c4723bcc9bed9b545633e406c2d2a42
   "exclude": [
     "node_modules"
   ]

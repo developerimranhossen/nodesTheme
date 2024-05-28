@@ -1,0 +1,63 @@
+{
+    "hero":{
+
+    },
+    "features":{
+
+    },
+    "users":{
+        
+    },
+    "gallery":{
+        "module_title":"",
+        "content":[
+            {
+                "img":"",
+                "title":"",
+                "message":""
+            },
+            {
+                "img":"",
+                "title":"",
+                "message":""
+            },
+            {
+                "img":"",
+                "title":"",
+                "message":""
+            }
+        ]
+    },
+    "articles":[
+        {
+            "title":"",
+            "Meta":"",
+            "Author":"",
+            "timestamp":"",
+            "intro":"",
+            "para":"",
+            "tags":"",
+            "img":""
+        },
+        {
+            "title":"",
+            "Meta":"",
+            "Author":"",
+            "timestamp":"",
+            "intro":"",
+            "para":"",
+            "tags":"",
+            "img":""
+        },
+        {
+            "title":"",
+            "Meta":"",
+            "Author":"",
+            "timestamp":"",
+            "intro":"",
+            "para":"",
+            "tags":"",
+            "img":""
+        }
+    ]
+}

@@ -495,18 +495,3 @@
 
   }
 }
-
-@layer components {
-	.max-container {
-		max-width: 1440px;
-		margin: 0 auto;
-    padding: 80px 120px;
-	}
-  .text-fill-color-transparent {
-  -webkit-text-fill-color: transparent;
-  }
-  .btn {
-    @apply py-3 px-6 rounded-[8px];
-  }
-
-}
