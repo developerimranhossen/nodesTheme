@@ -14,6 +14,8 @@ import Drille from "../public/logos/drille.png";
 import Kinsta from "../public/logos/kinsta.png";
 import Behance from "../public/logos/behance.png";
 
+// Git fetch issue teaching, remove this comment after you fetch. 
+
 import DocumentationCard from "../components/DocumentationCard";
 import ProgramCard from "../components/ProgramCard";
 import Hero from '../modules/hero'
