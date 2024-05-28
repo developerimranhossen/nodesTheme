@@ -10,13 +10,14 @@ import ProgramSection from "../components/ProgramSection";
 import UseCasesSection from "../components/UseCasesSection";
 import TestimonialSection from "../components/TestimonialSection";
 
+
 export default function Home() {
   return (
     <div className="nt-page-home">
       <section className="nt-section nt-hero">
         <div className="nt-row">
           <div className="nt-col nt-hero-A">
-            <Hero />
+            <Hero className={""}/>
           </div>
         </div>
       </section>
