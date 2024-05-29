@@ -7,7 +7,7 @@ function CustomLink({ children, path }) {
     const active = pathName === path
   return (
     <div>
-      <Link href={path} className={active ? 'text-component-text-primary': ''}>{children}</Link>
+      <Link href={path} className={active ? 'text-component-text-primary': 'text-component-text-gray'}>{children}</Link>
     </div>
   );
 }

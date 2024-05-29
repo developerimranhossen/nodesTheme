@@ -490,3 +490,13 @@
   --typography-sub-heading-soft: var(--base-colors-nutral-gray-strong-dark-mode-gray-strong-100);
   }
 }
+
+
+@layer components {
+    .nt-max-container{
+      @apply max-w-[1440px] py-[80px] px-[120px] mx-auto
+    }
+    .nt-btn {
+      @apply py-3 px-6 rounded-lg border-transparent
+    }
+}

@@ -16,6 +16,7 @@ import Behance from "../public/logos/behance.png";
 import DocumentationCard from "../components/DocumentationCard";
 import ProgramCard from "../components/ProgramCard";
 import Hero from '../modules/hero'
+import CustomButton from "../components/CustomButton";
 
 
 
@@ -28,16 +29,13 @@ export default function Home() {
           <p className="text-typography-sub-heading-soft text-lg">
             Smart web builder, made for Developers
           </p>
-          <div className="relative">
+          <div className="">
             <h1 className="text-typography-display text-lg_4x">
               Create any{" "}
-              <span className="bg-website bg-clip-text text-fill-color-transparent font-medium">
+              <span className="relative bg-website bg-clip-text text-fill-color-transparent font-medium">
                 website
-              </span>{" "}
-              with no-limits
-            </h1>
-            <svg
-              className="absolute -top-5 left-[330px]"
+                <svg
+              className="absolute -top-6 -left-[40px] -z-10"
               xmlns="http://www.w3.org/2000/svg"
               width="335"
               height="158"
@@ -92,9 +90,14 @@ export default function Home() {
                 </linearGradient>
               </defs>
             </svg>
+              </span>{" "}
+              with no-limits
+            </h1>
+            
           </div>
           <div className="flex justify-center items-start gap-6">
-            
+            <CustomButton className={'bg-component-fill-secondary-soft text-component-text-secondary'}>Explore templates</CustomButton>
+            <CustomButton className={'bg-component-fill-primary text-component-text-light-fixed'}>Start build today</CustomButton>
           </div>
           <div className="flex justify-center items-center gap-10">
             <p className="text-typography-paragraph-soft text-md">
