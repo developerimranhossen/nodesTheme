@@ -15,11 +15,14 @@ import Behance from "../public/logos/behance.png";
 import Hill from "../public/hill.jpg";
 import AvatarImg from "../public/avatar.png";
 import UseCase from "../public/use-case.png";
+import LeftArrow from "../public/left-arrow.png";
+import RightArrow from "../public/right-arrow.png";
 
 import DocumentationCard from "../components/DocumentationCard";
 import ProgramCard from "../components/ProgramCard";
 import Hero from '../modules/hero'
 import CustomButton from "../components/CustomButton";
+import TestimonialCard from "../components/TestimonialCard";
 
 
 
@@ -289,15 +292,25 @@ will love</h1>
     </div>
   </div>
 </div>
-<div className="nt-max-container bg-background-stroke-middle inline-flex flex-col items-center gap-10">
+
+
+</div>
+<div className="nt-max-container bg-background-stroke-middle flex flex-col items-center gap-10">
   <div className="flex w-[588px] flex-col items-center gap-3">
     <p className="text-container-text-primary text-center text-lg">Testimonials</p>
     <h2 className="text-typography-heading text-center text-lg_2x">Customer Reviews</h2>
   </div>
-  <div className="">
-    
+  <div className="flex items-start gap-6">
+    <TestimonialCard />
+    <TestimonialCard />
+    <TestimonialCard />
+    <TestimonialCard />
   </div>
-</div>
+  <div className="flex justify-center items-start gap-6">
+    <Image src={LeftArrow} width={48} height={48} alt="arrow" />
+    <Image src={RightArrow} width={48} height={48} alt="arrow" />
+
+  </div>
 
 </div>
 
