@@ -25,6 +25,7 @@ import TestimonialCard from "../components/TestimonialCard";
 import PricingCard from "../components/PricingCard";
 import Hero from "../components/Hero";
 import Video from "../components/Video";
+import Pricing from "../components/Pricing";
 
 
 
@@ -214,16 +215,7 @@ will love</h1>
   </div>
   
   </div>
-  <div className="nt-max-container flex flex-col justify-center items-center gap-10">
-  <div className="flex w-[588px] flex-col items-center gap-3">
-    <p className="text-container-text-primary text-center text-lg">Pricing</p>
-    <h2 className="text-typography-heading text-center text-lg_2x">Unleash Your Pricing Potential: Maximize Value, Minimize Cost</h2>
-  </div>
-  <div className="flex items-start gap-6">
-    <PricingCard />
-  </div>
-
-</div>
+  <Pricing />
 
     </>
   );

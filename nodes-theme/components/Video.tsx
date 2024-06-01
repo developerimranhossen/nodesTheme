@@ -1,9 +1,10 @@
-import React from 'react'
+import Image from "next/image";
+import HillImg from "../public/hill.jpg";
 
 function Video() {
   return (
     <div className="flex nt-max-container py-0 mt-[120px] mb-[60px] relative">
-          <div className="bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px]"></div>
+          <div className="bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px] -z-20"></div>
           <div className="w-[1200px] h-[716px] absolute">
           
           </div>
@@ -20,6 +21,7 @@ function Video() {
               fill="#D33C85"
             />
           </svg>
+          <Image src={HillImg} className="rounded-[18px] shadow-2xl -z-10" alt="hill" fill />
         </div>
   )
 }
