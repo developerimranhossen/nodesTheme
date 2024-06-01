@@ -32,6 +32,7 @@ import Blogs from "../components/Blogs";
 
 
 
+
 export default function Home() {
   return (
     <>
@@ -220,6 +221,7 @@ will love</h1>
   <Pricing />
   <Questions />
   <Blogs />
+  
 
     </>
   );
