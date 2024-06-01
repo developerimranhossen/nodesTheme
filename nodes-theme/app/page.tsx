@@ -26,6 +26,7 @@ import PricingCard from "../components/PricingCard";
 import Hero from "../components/Hero";
 import Video from "../components/Video";
 import Pricing from "../components/Pricing";
+import Questions from "../components/Questions";
 
 
 
@@ -90,7 +91,7 @@ export default function Home() {
           
         </div>
         <div className="nt-max-container flex flex-col justify-center items-center gap-10">
-          <div className="flex flex-col justify-center items-center gap-[18px] w-[588px] ">
+        <div className="flex flex-col justify-center items-center gap-[8px] w-[588px] ">
             <h1 className="text-typography-heading text-center text-lg_2x">
               Elevating Card Programs with Cutting-Edge Technology
             </h1>
@@ -216,6 +217,7 @@ will love</h1>
   
   </div>
   <Pricing />
+  <Questions />
 
     </>
   );
