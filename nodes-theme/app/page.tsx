@@ -27,6 +27,7 @@ import Hero from "../components/Hero";
 import Video from "../components/Video";
 import Pricing from "../components/Pricing";
 import Questions from "../components/Questions";
+import Blogs from "../components/Blogs";
 
 
 
@@ -218,6 +219,7 @@ will love</h1>
   </div>
   <Pricing />
   <Questions />
+  <Blogs />
 
     </>
   );
