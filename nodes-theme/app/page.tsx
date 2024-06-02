@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Hero from "../components/Hero";
 import Video from "../components/Video";
 import Pricing from "../components/Pricing";
@@ -15,17 +13,92 @@ import TestimonialSection from "../components/TestimonialSection";
 export default function Home() {
   return (
     <div className="nt-page-home">
-      <Hero />
-      <Video />
-      <TaskSection />
-      <UserSection />
-      <LogoSection />
-      <ProgramSection />
-      <UseCasesSection />
-      <TestimonialSection />
-      <Pricing />
-      <Questions />
-      <Blogs />
+      <section className="nt-section nt-hero">
+        <div className="nt-row">
+          <div className="nt-col nt-hero-A">
+            <Hero />
+          </div>
+        </div>
+      </section>
+      <section className="nt-section nt-video">
+        <div className="nt-row">
+          <div className="nt-col nt-video-A">
+            <Video />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-task">
+        <div className="nt-row">
+          <div className="nt-col nt-task-A">
+            <TaskSection />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-user">
+        <div className="nt-row">
+          <div className="nt-col nt-user-A">
+            <UserSection />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-logo">
+        <div className="nt-row">
+          <div className="nt-col nt-logo-A">
+            <LogoSection />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-program">
+        <div className="nt-row">
+          <div className="nt-col nt-program-A">
+            <ProgramSection />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-userCase">
+        <div className="nt-row">
+          <div className="nt-col nt-userCase-A">
+            <UseCasesSection />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-testimonial">
+        <div className="nt-row">
+          <div className="nt-col nt-testimonial-A">
+            <TestimonialSection />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-pricing">
+        <div className="nt-row">
+          <div className="nt-col nt-pricing-A">
+            <Pricing />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-question">
+        <div className="nt-row">
+          <div className="nt-col nt-question-A">
+            <Questions />
+          </div>
+        </div>
+      </section>
+
+      <section className="nt-section nt-blog">
+        <div className="nt-row">
+          <div className="nt-col nt-blog-A">
+            <Blogs />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
