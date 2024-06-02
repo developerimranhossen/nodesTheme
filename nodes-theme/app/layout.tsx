@@ -4,6 +4,7 @@ import './style.scss';
 
 // NT Components
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} nt-base-theme nt-body`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

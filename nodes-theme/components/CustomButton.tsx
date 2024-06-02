@@ -2,7 +2,7 @@
 
 function CustomButton({children, className}) {
   return (
-    <button className={`${className} btn`}>{children}</button>
+    <button className={`${className} nt-btn`}>{children}</button>
   )
 }
 
