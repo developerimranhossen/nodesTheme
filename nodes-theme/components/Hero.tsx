@@ -74,6 +74,7 @@ function Hero({ className }: props) {
       </div>
       <div className="hero-button-wrap">
         <CustomButton className="nt-btn-success">Explore templates</CustomButton>
+        <button className="nt-button-success">Explore templates</button>
         <CustomButton className="nt-btn-primary">Start build today</CustomButton>
       </div>
 
