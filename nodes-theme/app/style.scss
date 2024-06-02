@@ -141,4 +141,93 @@
     }
 }
 
+// use case 
+.nt-usecase-container {
+    @apply nt-max-container flex flex-col justify-center items-center gap-10 bg-background-stroke-middle;
+
+    .nt-usecase-wrap{
+        @apply flex flex-col items-center gap-3 w-[588px];
+        p{
+            @apply text-container-text-primary text-lg;
+        }
+        h1{
+            @apply text-typography-heading text-center text-lg_2x
+        }
+        .nt-card-wrap{
+            
+            @apply flex p-[6px] justify-center items-center gap-4 border border-background-stroke-surface rounded-xl bg-background-fill-surface;
+
+            .nt-bg-primary{
+                @apply bg-component-fill-primary
+            }
+            .nt-bg-soft{
+                @apply bg-component-fill-dark-soft
+            }
+            .nt-svg-wrap{
+                
+                @apply flex py-1 p-2 items-center gap-[6px] border border-transparent rounded-lg;
+
+                .nt-text-dark{
+                    @apply text-component-text-dark;
+                }
+                .nt-text-light{
+                    @apply text-component-text-light-fixed;
+                }
+
+                span{
+                    @apply  text-xs
+                }
+
+            }
+              
+
+        }
+        .nt-body-container{
+            @apply flex justify-between items-center w-[1200px];
+
+            .nt-body-wrap{
+                @apply flex flex-col shrink-0 items-start gap-6 w-[486px];
+
+                .nt-header-wrap{
+                    @apply flex flex-col items-start gap-[14px] self-stretch;
+
+                    h1{
+                        @apply text-typography-sub-heading text-lg font-medium text-left;
+                    }
+                    p{
+                        @apply text-typography-paragraph-soft;
+                    }
+                }
+            }
+            .nt-avatar-container{
+                @apply flex flex-col items-start gap-5;
+
+                .nt-avatar-wrap{
+                    @apply flex items-start gap-3;
+
+                    .nt-img-wrap{
+                        @apply size-10 border border-background-stroke-inner rounded-[48px] relative;
+                    }
+                    h3{
+                        @apply text-typography-sub-heading text-xs font-semibold;
+                    }
+                    p{
+                        @apply text-typography-paragraph-soft text-xs;
+                    }
+                    button{
+                        @apply flex items-center gap-2;
+                    }
+                    span{
+                        @apply text-component-text-secondary;
+                    }
+                }
+            }
+            
+            .nt-img-wrap{
+                @apply w-[594px] h-[371px] shrink-0 border-[6px] border-white bg-lavender-bloom rounded-2xl relative;
+            }
+        }
+    }
+}
+
 
