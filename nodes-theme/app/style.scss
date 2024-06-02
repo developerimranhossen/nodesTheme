@@ -3,15 +3,15 @@
 .nt-btn{
     @apply border rounded;
 }
+//typography
 
 // Position spesific
 // Module spesific
+// hero 
 .nt-hero{
     @apply text-center;
     h1{
         @apply text-lg_4x text-center;
     }
-    .nt-main-heading{
-        @apply relative;
-    }
+    
 }

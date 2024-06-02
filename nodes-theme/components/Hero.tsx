@@ -1,11 +1,11 @@
 
 import CustomButton from './CustomButton'
 
-function Hero() {
+function Hero({className}) {
   return (
-<div className="max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center">
+<div className={`${className} max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center`}>
           <p className="text-typography-sub-heading-soft text-lg">
-            Smart web builder, made for Developers
+            
           </p>
           <div className="">
             <h1 className="text-typography-display text-lg_4x">
