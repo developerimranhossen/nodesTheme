@@ -1,44 +1,79 @@
 // Global
 // Buttons
-.nt-btn{
-    @apply border rounded;
-}
+// .nt-btn{
+//     @apply border rounded;
+// }
 //typography
 
 // Position spesific
 // Module spesific
 // hero 
-.nt-hero{
+.nt-hero {
     @apply max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center;
-    p{
+
+    p {
         @apply text-typography-sub-heading-soft text-lg;
     }
-    h1{
-        @apply text-typography-display text-lg_4x
+
+    .nt-hero-header-wrap {
+        h1 {
+            @apply text-typography-display text-lg_4x
+        }
+    
+        span {
+            @apply relative bg-website bg-clip-text text-fill-color-transparent font-medium
+        }
+        svg{
+            @apply absolute -top-6 -left-[40px] -z-10
+        }
     }
-    span{
-        @apply relative bg-website bg-clip-text text-fill-color-transparent font-medium
-    }
-    :nth-child(3) {
+
+    .hero-button-wrap {
         @apply flex justify-center items-start gap-6;
 
-        .customBtn1{
-            @apply bg-component-fill-secondary-soft text-component-text-secondary ;
-         }
-         .customBtn2{
+        .customBtn1 {
+            @apply bg-component-fill-secondary-soft text-component-text-secondary;
+        }
+
+        .customBtn2 {
             @apply bg-component-fill-primary text-component-text-light-fixed;
-         }
-
-    }
-    :nth-child(4) {
-        @apply flex justify-center items-center gap-10;
-
-        p{
-            @apply text-typography-paragraph-soft text-md;
         }
 
     }
-    
-    
+
+    .nt-span-wrap {
+        @apply flex justify-center items-center gap-10 text-typography-paragraph-soft text-md;
+
+    }
+
+
 }
 
+// video
+.nt-video {
+    @apply flex nt-max-container py-0 mt-[120px] mb-[60px] relative;
+}
+
+// nav
+ .nt-nav {
+    @apply bg-background-fill-surface shadow-background-xsm;
+    > div{
+        @apply nt-max-container flex justify-between items-center py-6;
+
+        > a {
+            @apply text-[24px] font-medium bg-orchid-twilight bg-clip-text text-fill-color-transparent
+        }
+        ul{
+            @apply flex justify-center items-center gap-8 text-center
+        }
+        div{
+            @apply flex items-center gap-6;
+            a[href^="sign-in"] {
+                @apply text-component-text-primary
+            }
+            a[href^="/sign-up"]{
+                @apply nt-btn text-component-text-light-fixed bg-component-fill-primary
+            }
+        }
+    }
+ }

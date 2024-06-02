@@ -4,13 +4,13 @@ function Hero({ className }) {
   return (
     <div className={`${className} nt-hero `}>
       <p>Smart web builder, made for Developers</p>
-      <div>
+      <div className="nt-hero-header-wrap">
         <h1>
-          Create any
+          Create any {""}
           <span>
             website
             <svg
-              className="absolute -top-6 -left-[40px] -z-10"
+              className=""
               xmlns="http://www.w3.org/2000/svg"
               width="335"
               height="158"
@@ -69,16 +69,15 @@ function Hero({ className }) {
           with no-limits
         </h1>
       </div>
-      <div>
+      <div className="hero-button-wrap">
         <CustomButton className={"customBtn1"}>Explore templates</CustomButton>
         <CustomButton className={"customBtn2"}>Start build today</CustomButton>
       </div>
-      <div>
-        <p className="">60 Days free trial</p>
-        <p className="">
-          No credit card required
+      
+        <p className="nt-span-wrap">
+          <span>60 Days free trial</span> <span>credit card required</span>
         </p>
-      </div>
+      
     </div>
   );
 }
