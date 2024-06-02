@@ -14,93 +14,95 @@ import TestimonialSection from "../components/TestimonialSection";
 export default function Home() {
   return (
     <div className="nt-page-home">
-      <section className="nt-section">
+      <section className="nt-section nt-hero">
         <div className="nt-row">
           <div className="nt-col nt-hero-A">
             <Hero/>
           </div>
         </div>
       </section>
-      <section className="nt-section">
+      {/* End Hero */}
+      <section className="nt-section nt-feature">
         <div className="nt-row">
           <div className="nt-col nt-video-A">
             <Video />
           </div>
         </div>
       </section>
-
-
-      <section className="nt-section">
+      {/* End Feature*/}
+      <section className="nt-section nt-task">
         <div className="nt-row">
           <div className="nt-col nt-task-A">
             <TaskSection />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End Tasks */}
+      <section className="nt-section nt-user">
         <div className="nt-row">
           <div className="nt-col nt-user-A">
             <UserSection />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End user */}
+      <section className="nt-section nt-client">
         <div className="nt-row">
           <div className="nt-col nt-logo-A">
             <LogoSection />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End client */}
+      <section className="nt-section nt-program">
         <div className="nt-row">
           <div className="nt-col nt-program-A">
             <ProgramSection />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End Program */}
+      <section className="nt-section nt-use-case">
         <div className="nt-row">
           <div className="nt-col nt-userCase-A">
             <UseCasesSection />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End Use case */}
+      <section className="nt-section nt-testimonial">
         <div className="nt-row">
           <div className="nt-col nt-testimonial-A">
             <TestimonialSection />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End Testimonial */}
+      <section className="nt-section nt-pricing">
         <div className="nt-row">
           <div className="nt-col nt-pricing-A">
             <Pricing />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End Pricing */}
+      <section className="nt-section nt-faq">
         <div className="nt-row">
           <div className="nt-col nt-question-A">
             <Questions />
           </div>
         </div>
       </section>
-
-      <section className="nt-section">
+      {/* End FAQ */}
+      <section className="nt-section nt-blog">
         <div className="nt-row">
           <div className="nt-col nt-blog-A">
             <Blogs />
           </div>
         </div>
       </section>
+      {/* End Blog */}
     </div>
+    // End home wrap
   );
 }
