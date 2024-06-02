@@ -6,11 +6,11 @@ import TasksImg from "../public/tasks.png";
 function TaskSection() {
   return (
     <>
-    <div className="nt-max-container flex justify-between items-center">
+    <div className="nt-task">
           <CustomImage path={TasksImg} />
           <Task heading={"Never miss any task"} />
         </div>
-        <div className="nt-max-container flex justify-between items-center">
+        <div className="nt-task">
           <Task heading={"Drag Drop & Publish"} />
           <CustomImage path={TasksImg} />
         </div>
