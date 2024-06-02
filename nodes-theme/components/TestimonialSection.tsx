@@ -5,16 +5,16 @@ import TestimonialCard from "./TestimonialCard";
 
 function TestimonialSection() {
   return (
-    <div className="nt-max-container bg-background-stroke-middle flex flex-col items-center gap-10">
-      <div className="flex w-[588px] flex-col items-center gap-3">
-        <p className="text-container-text-primary text-center text-lg">
+    <div className="nt-testimonial-container">
+      <div className="nt-header-wrap">
+        <p className="">
           Testimonials
         </p>
         <h2 className="text-typography-heading text-center text-lg_2x">
           Customer Reviews
         </h2>
       </div>
-      <div className="flex items-start gap-6">
+      <div className="nt-card-wrap">
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />

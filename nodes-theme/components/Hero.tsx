@@ -8,7 +8,7 @@ function Hero({ className }: props) {
   return (
     <div className={`${className} nt-hero`}>
       <p>Smart web builder, made for Developers</p>
-      <div className="nt-hero-header-wrap">
+      <div className="nt-header-wrap">
         <h1>
           Create any{" "}
           <span>
@@ -77,7 +77,7 @@ function Hero({ className }: props) {
         <CustomButton className="nt-btn-primary">Start build today</CustomButton>
       </div>
 
-      <p className="text-typography-paragraph-soft text-md">
+      <p className="nt-span-wrap">
         <span>60 Days free trial</span>
         <span>No credit card required</span>
       </p>

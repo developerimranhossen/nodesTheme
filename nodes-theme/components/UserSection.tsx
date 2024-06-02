@@ -5,7 +5,7 @@ import DocuHorizontal from "../public/docu-horizontal.png";
 
 function UserSection() {
   return (
-    <div className="nt-user">
+    <div className="nt-user-container">
           <div className="nt-user-wrap">
             <div className="nt-user-svg-wrap">
               <svg
