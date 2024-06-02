@@ -499,4 +499,12 @@
     .nt-btn {
       @apply py-3 px-6 rounded-lg border-transparent
     }
+    .text-fill-color-transparent {
+      -webkit-text-fill-color: transparent;
+    }
+    /* .nt-max-container{
+      max-width: 1440px;
+      padding: 80px 120px;
+      margin: 0 auto;
+    } */
 }
