@@ -76,6 +76,17 @@
 // video
 .nt-video {
     @apply flex nt-max-container py-0 mt-[120px] mb-[60px] relative;
+
+    .nt-video-gradient {
+        @apply bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px] -z-20
+    }
+    svg {
+        @apply absolute left-0 right-0 bottom-0 top-0  m-auto
+    }
+    img{
+        @apply rounded-[18px] shadow-2xl -z-10
+    }
+
 }
 
 

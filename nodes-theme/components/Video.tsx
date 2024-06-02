@@ -3,11 +3,10 @@ import HillImg from "../public/hill.jpg";
 
 function Video() {
   return (
-    <div className="flex nt-max-container py-0 mt-[120px] mb-[60px] relative nt-video">
-      <div className="bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px] -z-20"></div>
-      <div className="w-[1200px] h-[716px] absolute"></div>
+    <div className="nt-video">
+      <div className=" nt-video-gradient"></div>
+      {/* <div className="w-[1200px] h-[716px] absolute"></div> */}
       <svg
-        className="absolute left-1/2 top-1/2  -translatex-1/2 -translate-y-1/2"
         xmlns="http://www.w3.org/2000/svg"
         width="35"
         height="40"
@@ -21,7 +20,6 @@ function Video() {
       </svg>
       <Image
         src={HillImg}
-        className="rounded-[18px] shadow-2xl -z-10"
         alt="hill"
         fill
       />
