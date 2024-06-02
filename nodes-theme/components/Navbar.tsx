@@ -14,8 +14,8 @@ const navs = [
 function Navbar() {
   return (
     <nav className="nt-nav">
-      <div >
-        <Link
+      <div className="nt-nav-container">
+        <Link className="nt-logo"
           href="/"
         >
           {/* after logo here */}
@@ -27,7 +27,7 @@ function Navbar() {
           </li>))}
          
         </ul>
-        <div>
+        <div className="nt-nav-link-wrap">
           <Link href="sign-in">
             Sign in
           </Link>
