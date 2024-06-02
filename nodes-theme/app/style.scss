@@ -55,11 +55,11 @@
     .hero-button-wrap {
         @apply flex justify-center items-start gap-6;
 
-        .customBtn1 {
+        .nt-btn-success {
             @apply bg-component-fill-secondary-soft text-component-text-secondary;
         }
 
-        .customBtn2 {
+        .nt-btn-primary {
             @apply bg-component-fill-primary text-component-text-light-fixed;
         }
 
@@ -92,6 +92,27 @@
 // task 
 .nt-task{
     @apply nt-max-container flex justify-between items-center
+}
+
+// user
+.nt-user{
+    @apply nt-max-container flex flex-col items-center gap-10;
+    .nt-user-wrap{
+        @apply w-[450px] flex flex-col justify-center items-center gap-3;
+        .nt-user-svg-wrap{
+            @apply flex items-center gap-[10px];
+        }
+    .nt-user-text-wrap{
+        @apply flex flex-col items-center gap-2 self-stretch;
+
+        h1{
+            @apply text-typography-heading text-center text-lg_2x;
+        }
+        p{
+           @apply text-typography-paragraph-soft;
+        }
+    }
+    }
 }
 
 
