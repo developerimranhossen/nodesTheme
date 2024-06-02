@@ -39,7 +39,7 @@
         @apply text-typography-sub-heading-soft text-lg;
     }
 
-    .nt-hero-header-wrap {
+    .nt-header-wrap {
         h1 {
             @apply text-typography-display text-lg_4x
         }
@@ -90,12 +90,12 @@
 }
 
 // task 
-.nt-task{
+.nt-task-container{
     @apply nt-max-container flex justify-between items-center
 }
 
 // user
-.nt-user{
+.nt-user-container{
     @apply nt-max-container flex flex-col items-center gap-10;
     .nt-user-wrap{
         @apply w-[450px] flex flex-col justify-center items-center gap-3;
@@ -112,6 +112,32 @@
            @apply text-typography-paragraph-soft;
         }
     }
+    }
+}
+
+// client 
+.nt-logo-container {
+    @apply nt-max-container flex justify-between items-center bg-background-stroke-middle
+}
+
+.nt-program-container {
+    @apply nt-max-container flex flex-col justify-center items-center gap-10;
+
+    .nt-header-wrap {
+        @apply flex flex-col justify-center items-center gap-[8px] w-[588px];
+        h1{
+            @apply text-typography-heading text-center text-lg_2x;
+        }
+        p{
+          @apply text-typography-paragraph-soft text-center;  
+        }
+        .nt-svg-wrap{
+            @apply flex items-center gap-3;  
+          }
+    }
+
+    .nt-programcard-wrap{
+        @apply flex gap-6 flex-wrap;
     }
 }
 
