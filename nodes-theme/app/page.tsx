@@ -14,14 +14,14 @@ import TestimonialSection from "../components/TestimonialSection";
 export default function Home() {
   return (
     <div className="nt-page-home">
-      <section className="nt-section nt-hero">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-hero-A">
             <Hero/>
           </div>
         </div>
       </section>
-      <section className="nt-section nt-video">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-video-A">
             <Video />
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
 
-      <section className="nt-section nt-task">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-task-A">
             <TaskSection />
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-user">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-user-A">
             <UserSection />
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-logo">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-logo-A">
             <LogoSection />
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-program">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-program-A">
             <ProgramSection />
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-userCase">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-userCase-A">
             <UseCasesSection />
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-testimonial">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-testimonial-A">
             <TestimonialSection />
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-pricing">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-pricing-A">
             <Pricing />
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-question">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-question-A">
             <Questions />
@@ -94,7 +94,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nt-section nt-blog">
+      <section className="nt-section">
         <div className="nt-row">
           <div className="nt-col nt-blog-A">
             <Blogs />

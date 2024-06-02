@@ -5,9 +5,9 @@ import DocuHorizontal from "../public/docu-horizontal.png";
 
 function UserSection() {
   return (
-    <div className="nt-max-container flex flex-col items-center gap-10">
-          <div className="w-[450px] flex flex-col justify-center items-center gap-3 ">
-            <div className="flex items-center gap-[10px]">
+    <div className="nt-user">
+          <div className="nt-user-wrap">
+            <div className="nt-user-svg-wrap">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -28,16 +28,16 @@ function UserSection() {
                 The modern standard
               </h4>
             </div>
-            <div className="flex flex-col items-center gap-2 self-stretch">
-              <h1 className="text-typography-heading text-center text-lg_2x">
+            <div className="nt-user-text-wrap">
+              <h1 className="">
                 Beautiful documentation that converts users
               </h1>
-              <p className="text-typography-paragraph-soft">
+              <p className="">
                 A platform you can rely on to reach your audience
               </p>
             </div>
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-6 nt-user">
             <DocumentationCard path={DocuHorizontal} size={"384"} />
             <DocumentationCard path={DocuVerticalImg} size={"282"} />
             <DocumentationCard path={DocuVerticalImg} size={"282"} />
