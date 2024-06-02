@@ -1,18 +1,15 @@
+import CustomButton from "./CustomButton";
 
-import CustomButton from './CustomButton'
-
-function Hero({className}) {
+function Hero({ className }) {
   return (
-<div className={`${className} max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center`}>
-          <p className="text-typography-sub-heading-soft text-lg">
-            
-          </p>
-          <div className="">
-            <h1 className="text-typography-display text-lg_4x">
-              Create any{" "}
-              <span className="relative bg-website bg-clip-text text-fill-color-transparent font-medium">
-                website
-                <svg
+    <div className={`${className} nt-hero `}>
+      <p>Smart web builder, made for Developers</p>
+      <div>
+        <h1>
+          Create any
+          <span>
+            website
+            <svg
               className="absolute -top-6 -left-[40px] -z-10"
               xmlns="http://www.w3.org/2000/svg"
               width="335"
@@ -68,25 +65,22 @@ function Hero({className}) {
                 </linearGradient>
               </defs>
             </svg>
-              </span>{" "}
-              with no-limits
-            </h1>
-            
-          </div>
-          <div className="flex justify-center items-start gap-6">
-            <CustomButton className={'bg-component-fill-secondary-soft text-component-text-secondary'}>Explore templates</CustomButton>
-            <CustomButton className={'bg-component-fill-primary text-component-text-light-fixed'}>Start build today</CustomButton>
-          </div>
-          <div className="flex justify-center items-center gap-10">
-            <p className="text-typography-paragraph-soft text-md">
-              60 Days free trial
-            </p>
-            <p className="text-typography-paragraph-soft text-md">
-              No credit card required
-            </p>
-          </div>
-        </div>
-  )
+          </span>{" "}
+          with no-limits
+        </h1>
+      </div>
+      <div>
+        <CustomButton className={"customBtn1"}>Explore templates</CustomButton>
+        <CustomButton className={"customBtn2"}>Start build today</CustomButton>
+      </div>
+      <div>
+        <p className="">60 Days free trial</p>
+        <p className="">
+          No credit card required
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;

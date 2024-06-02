@@ -9,9 +9,36 @@
 // Module spesific
 // hero 
 .nt-hero{
-    @apply text-center;
+    @apply max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center;
+    p{
+        @apply text-typography-sub-heading-soft text-lg;
+    }
     h1{
-        @apply text-lg_4x text-center;
+        @apply text-typography-display text-lg_4x
+    }
+    span{
+        @apply relative bg-website bg-clip-text text-fill-color-transparent font-medium
+    }
+    :nth-child(3) {
+        @apply flex justify-center items-start gap-6;
+
+        .customBtn1{
+            @apply bg-component-fill-secondary-soft text-component-text-secondary ;
+         }
+         .customBtn2{
+            @apply bg-component-fill-primary text-component-text-light-fixed;
+         }
+
+    }
+    :nth-child(4) {
+        @apply flex justify-center items-center gap-10;
+
+        p{
+            @apply text-typography-paragraph-soft text-md;
+        }
+
     }
     
+    
 }
+
