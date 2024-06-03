@@ -1,10 +1,9 @@
 import BlogCard from "../../components/BlogCard";
 import Hero from "../../components/blogs/Hero";
 
-
 function Blogpage() {
   return (
-    <>
+    <div className="nt-page-blogs">
       <Hero />
       <div className="max-w-[1440px] px-[120px] py-[80px] flex flex-col gap-8 mx-auto">
         <div className="flex items-start gap-2">
@@ -42,7 +41,7 @@ function Blogpage() {
           <BlogCard smallCard={true} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

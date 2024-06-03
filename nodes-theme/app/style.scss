@@ -7,6 +7,9 @@
 
 // Position spesific
 // Module spesific
+
+
+//start home page
 // nav
 .nt-nav {
     @apply bg-background-fill-surface shadow-background-xsm;
@@ -460,4 +463,45 @@
         }
     }
 }
+//end home page
+
+//star blogs page
+//hero
+.nt-blog-hero{
+    @apply flex flex-col items-center gap-6 nt-max-container;
+
+    .nt-header-wrap{
+        @apply flex w-[996px] flex-col items-center gap-3 mx-auto relative;
+
+        h1{
+            @apply text-typography-heading text-center text-[64px] font-medium leading-[84px];
+        }
+        p{
+          @apply text-typography-paragraph-soft text-center text-[18px] leading-7;  
+        }
+    }
+    form{
+        @apply flex w-[588px] p-1 justify-between items-center rounded-lg border border-component-stroke-dark-soft bg-component-fill-light mx-auto;
+
+        .nt-input-container{
+            @apply flex p-[10px] items-center gap-2;
+
+            input{
+                @apply text-component-text-gray  text-sm;
+            }
+        }
+        .nt-button-container{
+            @apply flex items-start;
+
+            .nt-button-wrap{
+                @apply flex p-3 justify-center items-center gap-4 border rounded-lg bg-component-fill-primary;
+
+                button{
+                    @apply text-component-text-light-fixed text-center text-sm;
+                }
+            }
+        }
+    }
+}
+
 

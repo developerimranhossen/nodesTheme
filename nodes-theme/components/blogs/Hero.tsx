@@ -1,8 +1,8 @@
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center gap-6 max-w-[1440px] mx-auto mt-[173px] ">
-        <div className="flex w-[996px] flex-col items-center gap-3 mx-auto relative">
+    <div className="nt-blog-hero">
+        <div className="nt-header-wrap">
           <svg
             className="absolute -top-[30px]"
             xmlns="http://www.w3.org/2000/svg"
@@ -59,27 +59,26 @@ function Hero() {
               </linearGradient>
             </defs>
           </svg>
-          <h1 className="text-typography-heading text-center text-[64px] font-medium leading-[84px]">
+          <h1>
             Blogs
           </h1>
-          <p className="text-typography-paragraph-soft text-center text-[18px] leading-7">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
             proin faucibus nibh et sagittis a. Lacinia purus ac amet
             pellentesque aliquam enim.
           </p>
         </div>
-        <form className="flex w-[588px] p-1 justify-between items-center rounded-lg border border-component-stroke-dark-soft bg-component-fill-light mx-auto ">
-          <div className="flex p-[10px] items-center gap-2">
+        <form>
+          <div className="nt-input-container">
             <input
               type="text"
               placeholder="Enter your email"
-              className="text-component-text-gray  text-sm "
             />
           </div>
 
-          <div className="flex items-start">
-            <div className="flex p-3 justify-center items-center gap-4 border rounded-lg bg-component-fill-primary">
-              <button className="text-component-text-light-fixed text-center text-sm">
+          <div className="nt-button-container">
+            <div className="nt-button-wrap">
+              <button>
                 Subscribe
               </button>
             </div>
