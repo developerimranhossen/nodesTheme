@@ -6,7 +6,7 @@ interface props {
 
 function Hero({ className }: props) {
   return (
-    <div className={`${className} nt-hero`}>
+    <div className={`${className} nt-home-hero`}>
       <p>Smart web builder, made for Developers</p>
       <div className="nt-header-wrap">
         <h1>

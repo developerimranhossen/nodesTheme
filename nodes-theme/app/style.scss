@@ -15,6 +15,13 @@ html{
 // Helpers
 // Utility
 // Position spesific
+
+// Module spesific
+
+
+//start home page
+// nav
+
 .nt-nav {
     @apply bg-background-fill-surface shadow-background-xsm;
     .nt-nav-container{
@@ -39,7 +46,7 @@ html{
  }
 // Module spesific
 // hero 
-.nt-hero {
+.nt-home-hero {
     @apply max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center;
     p {
         @apply text-typography-sub-heading-soft text-lg;
@@ -362,49 +369,53 @@ html{
     }
 }
 
+//blogCard
+.nt-blogcard-container{
+    @apply flex items-start  border-background-stroke-outermost;
+
+    .nt-header-wrap{
+        @apply flex flex-col items-start gap-2;
+
+        h5{
+            @apply text-container-text-secondary font-medium leading-6;
+        }
+        h6{
+            @apply text-typography-heading font-semibold;
+        }
+        span{
+            @apply text-typography-body-soft leading-6;
+        }
+    }
+    .nt-text-wrap{
+        @apply flex items-start gap-2;
+
+        p{
+            @apply text-component-text-tertiary text-sm py-[2px] px-2 border rounded-[99px]  border-component-stroke-tertiary bg-component-fill-tertiary-soft;
+        }
+    }
+}
+
 // blog
 .nt-blog-container{
     @apply nt-max-container flex flex-col items-center gap-10;
 
-    .nt-header-wrap{
+    .nt-blog-header-wrap{
         @apply flex w-[588px] flex-col items-center gap-3;
 
-        p{
+        h4{
           @apply text-container-text-primary text-center text-lg; 
         }
 
-        h2{
+        h3{
             @apply text-typography-heading text-center text-lg_2x;
         }
     }
-    .nt-blogcard-wrap{
+    .nt-left-blogcard{
         @apply flex items-start gap-6;
 
-        .nt-blogcard-container{
-            @apply flex items-start  border-background-stroke-outermost;
-
-            .nt-header-wrap{
-                @apply flex flex-col items-start gap-2;
-
-                p{
-                    @apply text-container-text-secondary font-medium leading-6;
-                }
-                h2{
-                    @apply text-typography-heading font-semibold;
-                }
-                span{
-                    @apply text-typography-body-soft leading-6;
-                }
-            }
-
-            .nt-text-wrap{
-                @apply flex items-start gap-2;
-
-                p{
-                    @apply text-component-text-tertiary text-sm py-[2px] px-2 border rounded-[99px]  border-component-stroke-tertiary bg-component-fill-tertiary-soft;
-                }
-            }
-
+        
+        .nt-right-blogcard{
+            @apply flex flex-col justify-between items-start self-stretch gap-4;
         }
     }
     button{
@@ -453,4 +464,80 @@ html{
         }
     }
 }
+//end home page
 
+//star blogs page
+//hero
+.nt-blog-hero{
+    @apply flex flex-col items-center gap-6 nt-max-container;
+
+    .nt-header-wrap{
+        @apply flex w-[996px] flex-col items-center gap-3 mx-auto relative;
+
+        h1{
+            @apply text-typography-heading text-center text-[64px] font-medium leading-[84px];
+        }
+        p{
+          @apply text-typography-paragraph-soft text-center text-[18px] leading-7;  
+        }
+    }
+    form{
+        @apply flex w-[588px] p-1 justify-between items-center rounded-lg border border-component-stroke-dark-soft bg-component-fill-light mx-auto;
+
+        .nt-input-container{
+            @apply flex p-[10px] items-center gap-2;
+
+            input{
+                @apply text-component-text-gray  text-sm;
+            }
+        }
+        .nt-button-container{
+            @apply flex items-start;
+
+            .nt-button-wrap{
+                @apply flex p-3 justify-center items-center gap-4 border rounded-lg bg-component-fill-primary;
+
+                button{
+                    @apply text-component-text-light-fixed text-center text-sm;
+                }
+            }
+        }
+    }
+}
+
+// blogsBody
+.nt-blogsbody-container{
+    @apply max-w-[1440px] px-[120px] py-[80px] flex flex-col gap-8 mx-auto;
+
+    .nt-header-wrap{
+        @apply flex items-start gap-2;
+
+        h3{
+            @apply text-typography-heading text-center text-lg_2x font-medium leading-[52px];
+        }
+    }
+    .nt-left-blogcard{
+        @apply flex items-start gap-6;
+
+        
+        .nt-right-blogcard{
+            @apply flex flex-col justify-between items-start self-stretch gap-4;
+        }
+    }
+    
+}
+
+.nt-allblog-container{
+    @apply nt-max-container flex flex-col gap-8;
+
+    .nt-header-wrap{
+       @apply flex items-start gap-2; 
+
+       h1{
+        @apply text-typography-heading text-center text-lg_2x font-medium leading-[52px];
+       }
+    }
+    .nt-allblog-wrap{
+        @apply grid grid-cols-3 gap-y-8;
+    }
+}
