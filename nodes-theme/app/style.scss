@@ -1,13 +1,20 @@
 // Global
-// Buttons
-// .nt-btn{
-//     @apply border rounded;
+html{
+    @apply bg-background-fill-surface;
+}
+// Layout
+// Content
+// Forms
+// Components
+// .btn-primary{
+    
 // }
-//typography
+// .btn-positive{
 
+// }
+// Helpers
+// Utility
 // Position spesific
-// Module spesific
-// nav
 .nt-nav {
     @apply bg-background-fill-surface shadow-background-xsm;
     .nt-nav-container{
@@ -30,20 +37,17 @@
         }
     }
  }
-
+// Module spesific
 // hero 
 .nt-hero {
     @apply max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center;
-
     p {
         @apply text-typography-sub-heading-soft text-lg;
     }
-
-    .nt-header-wrap {
+    .nt-hero-header-wrap {
         h1 {
             @apply text-typography-display text-lg_4x
         }
-    
         span {
             @apply relative bg-website bg-clip-text text-fill-color-transparent font-medium
         }
@@ -51,23 +55,12 @@
             @apply absolute -top-6 -left-[40px] -z-10
         }
     }
-
     .hero-button-wrap {
         @apply flex justify-center items-start gap-6;
-
-        .nt-btn-success {
-            @apply bg-component-fill-secondary-soft text-component-text-secondary;
-        }
-
-        .nt-btn-primary {
-            @apply bg-component-fill-primary text-component-text-light-fixed;
-        }
-
     }
 
     .nt-span-wrap {
         @apply flex justify-center items-center gap-10 text-typography-paragraph-soft text-md;
-
     }
 
 

@@ -1,10 +1,83 @@
-.nt-btn {
-  @apply border rounded;
+html {
+  @apply bg-background-fill-surface;
+}
+
+.nt-nav {
+  @apply bg-background-fill-surface shadow-background-xsm;
+}
+.nt-nav .nt-nav-container {
+  @apply nt-max-container flex justify-between items-center py-6;
+}
+.nt-nav .nt-nav-container .nt-logo {
+  @apply text-[24px] font-medium bg-orchid-twilight bg-clip-text text-fill-color-transparent;
+}
+.nt-nav .nt-nav-container ul {
+  @apply flex justify-center items-center gap-8 text-center;
+}
+.nt-nav .nt-nav-container .nt-nav-link-wrap {
+  @apply flex items-center gap-6;
+}
+.nt-nav .nt-nav-container .nt-nav-link-wrap a[href^=sign-in] {
+  @apply text-component-text-primary;
+}
+.nt-nav .nt-nav-container .nt-nav-link-wrap a[href^="/sign-up"] {
+  @apply nt-btn text-component-text-light-fixed bg-component-fill-primary;
 }
 
 .nt-hero {
-  @apply text-center;
+  @apply max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center;
 }
-.nt-hero h1 {
-  @apply text-lg_4x text-center;
+.nt-hero p {
+  @apply text-typography-sub-heading-soft text-lg;
+}
+.nt-hero .nt-hero-header-wrap h1 {
+  @apply text-typography-display text-lg_4x;
+}
+.nt-hero .nt-hero-header-wrap span {
+  @apply relative bg-website bg-clip-text text-fill-color-transparent font-medium;
+}
+.nt-hero .nt-hero-header-wrap svg {
+  @apply absolute -top-6 -left-[40px] -z-10;
+}
+.nt-hero .hero-button-wrap {
+  @apply flex justify-center items-start gap-6;
+}
+.nt-hero .nt-span-wrap {
+  @apply flex justify-center items-center gap-10 text-typography-paragraph-soft text-md;
+}
+
+.nt-video {
+  @apply flex nt-max-container py-0 mt-[120px] mb-[60px] relative;
+}
+.nt-video .nt-video-gradient {
+  @apply bg-gradient-3  w-[1233px] h-[770px] opacity-50 filter blur-[48px] -z-20;
+}
+.nt-video svg {
+  @apply absolute left-0 right-0 bottom-0 top-0  m-auto;
+}
+.nt-video img {
+  @apply rounded-[18px] shadow-2xl -z-10;
+}
+
+.nt-task {
+  @apply nt-max-container flex justify-between items-center;
+}
+
+.nt-user {
+  @apply nt-max-container flex flex-col items-center gap-10;
+}
+.nt-user .nt-user-wrap {
+  @apply w-[450px] flex flex-col justify-center items-center gap-3;
+}
+.nt-user .nt-user-wrap .nt-user-svg-wrap {
+  @apply flex items-center gap-[10px];
+}
+.nt-user .nt-user-wrap .nt-user-text-wrap {
+  @apply flex flex-col items-center gap-2 self-stretch;
+}
+.nt-user .nt-user-wrap .nt-user-text-wrap h1 {
+  @apply text-typography-heading text-center text-lg_2x;
+}
+.nt-user .nt-user-wrap .nt-user-text-wrap p {
+  @apply text-typography-paragraph-soft;
 }/*# sourceMappingURL=style.css.map */
