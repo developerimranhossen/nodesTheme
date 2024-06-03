@@ -326,7 +326,46 @@
 }
 
 // faq 
-// .nt-faq-container{
-//     @apply
-// }
+.nt-faq-container{
+    @apply nt-max-container px-0 flex justify-center;
+
+    .nt-faq-wrap{
+        @apply flex flex-col items-center gap-10 w-[996px];
+
+        .nt-body-wrap{
+          @apply flex flex-col justify-center items-center gap-[8px] w-[588px];
+
+          h1{
+            @apply text-typography-heading text-center text-lg_2x;
+          }
+
+          p{
+            @apply text-typography-paragraph-soft text-center;
+        }
+        }
+        .nt-accordion-wrap{
+            @apply flex flex-col items-center gap-5 w-[996px];
+
+            .nt-accordion-container{
+                @apply flex flex-col items-start gap-[14px] self-stretch w-[948px] p-6 border border-background-stroke-inner;
+
+                button{
+                    @apply flex justify-between w-full;
+
+                    span{
+                        @apply text-gray-900 text-lg font-medium;
+                    }
+                }
+            .nt-text-wrap{
+                @apply grid overflow-hidden transition-all duration-300 ease-in-out;
+
+                p{
+                    @apply text-gray-500 text-md overflow-hidden;
+                }
+            }
+                
+            }
+        }
+    }
+}
 
