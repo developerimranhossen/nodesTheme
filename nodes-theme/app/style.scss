@@ -267,4 +267,66 @@
     }
 }
 
+// pricing 
+.nt-pricing-container{
+    @apply nt-max-container flex flex-col justify-center items-center gap-10;
+
+    .nt-pricing-wrap{
+        @apply flex w-[588px] flex-col items-center gap-3;
+
+        p{
+            @apply text-container-text-primary text-center text-lg;
+        }
+        h2{
+            @apply text-typography-heading text-center text-lg_2x;
+        }
+    }
+
+    .nt-pricecard-wrap{
+        @apply flex items-start gap-6;
+        
+
+        .nt-pricecard-container{
+            @apply flex flex-col items-center gap-10 w-[384px] py-10 px-8 border-[1.5px] border-background-stroke-surface rounded-2xl bg-background-fill-white;
+
+            .nt-header-wrap{
+                @apply flex justify-between items-center self-stretch;
+
+                h2{
+                    @apply text-container-text-secondary text-[24px] font-semibold;
+                }
+                p{
+                    @apply text-typography-sub-heading text-lg font-medium;
+                }
+                span{
+                    @apply text-typography-sub-heading-soft text-center text-xs ml-1;
+                }
+            }
+        }
+        hr{
+            @apply w-[320px] h-[1px] border-0 bg-[#E0D2E7];
+        }
+
+        p{
+            @apply text-typography-paragraph-soft text-xs leading-[22.4px];
+        }
+
+        .nt-body-container{
+            @apply flex flex-col items-start gap-[14px] self-stretch;
+
+            .nt-body-wrap{
+                @apply flex items-center gap-[10px] self-stretch;
+
+                p{
+                    @apply text-container-text-gray leading-[20.8px];
+                }
+            }
+        }
+    }
+}
+
+// faq 
+// .nt-faq-container{
+//     @apply
+// }
 
