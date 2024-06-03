@@ -18,14 +18,14 @@ function BlogCard({ bigCard, smallCard, flexCard }) {
         } ${flexCard && "gap-2 flex-grow-1 flex-shrink-0 basis-0"} `}
       >
         <div className="nt-header-wrap">
-          <p>Olivia Rhye • 1 Jan 2023</p>
-          <h2
+          <h5>Olivia Rhye • 1 Jan 2023</h5>
+          <h6
             className={`${
               flexCard ? "text-base" : "text-2xl leading-[34px]"
             }  `}
           >
             UX review presentations
-          </h2>
+          </h6>
           <span>
             Linear helps streamline software projects, sprints, tasks, ...
           </span>
