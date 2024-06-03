@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import Video from "../components/Video";
 import Pricing from "../components/Pricing";
-import Questions from "../components/Questions";
 import Blogs from "../components/Blogs";
 import TaskSection from "../components/TaskSection";
 import UserSection from "../components/UserSection";
@@ -9,7 +8,7 @@ import LogoSection from "../components/LogoSection";
 import ProgramSection from "../components/ProgramSection";
 import UseCasesSection from "../components/UseCasesSection";
 import TestimonialSection from "../components/TestimonialSection";
-
+import Faq from "../components/Faq";
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
       <section className="nt-section nt-hero">
         <div className="nt-row">
           <div className="nt-col nt-hero-A">
-            <Hero/>
+            <Hero />
           </div>
         </div>
       </section>
@@ -88,8 +87,8 @@ export default function Home() {
       {/* End Pricing */}
       <section className="nt-section nt-faq">
         <div className="nt-row">
-          <div className="nt-col nt-question-A">
-            <Questions />
+          <div className="nt-col nt-faq-A">
+            <Faq />
           </div>
         </div>
       </section>
