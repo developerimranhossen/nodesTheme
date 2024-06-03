@@ -9,4 +9,4 @@ function CustomButton({children, className}:props) {
   )
 }
 
-export default CustomButton
+export default CustomButton;
