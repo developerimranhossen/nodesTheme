@@ -10,7 +10,7 @@ import Behance from "../public/logos/behance.png";
 
 function LogoSection() {
   return (
-    <div className="nt-max-container flex justify-between items-center bg-background-stroke-middle">
+    <div className="nt-logo-container">
         <Image src={Nuxt} width={98} height={24} alt=""/>
         <Image src={Miro} width={68} height={24} alt=""/>
         <Image src={Lottie} width={124} height={24} alt=""/>

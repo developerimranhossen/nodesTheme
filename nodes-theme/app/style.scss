@@ -83,12 +83,12 @@ html{
 }
 
 // task 
-.nt-task{
+.nt-task-container{
     @apply nt-max-container flex justify-between items-center
 }
 
 // user
-.nt-user{
+.nt-user-container{
     @apply nt-max-container flex flex-col items-center gap-10;
     .nt-user-wrap{
         @apply w-[450px] flex flex-col justify-center items-center gap-3;
@@ -108,4 +108,349 @@ html{
     }
 }
 
+// client 
+.nt-logo-container {
+    @apply nt-max-container flex justify-between items-center bg-background-stroke-middle
+}
+
+.nt-program-container {
+    @apply nt-max-container flex flex-col justify-center items-center gap-10;
+
+    .nt-header-wrap {
+        @apply flex flex-col justify-center items-center gap-[8px] w-[588px];
+        h1{
+            @apply text-typography-heading text-center text-lg_2x;
+        }
+        p{
+          @apply text-typography-paragraph-soft text-center;  
+        }
+        .nt-svg-wrap{
+            @apply flex items-center gap-3;  
+          }
+    }
+
+    .nt-programcard-wrap{
+        @apply flex gap-6 flex-wrap;
+    }
+}
+
+// use case 
+.nt-usecase-container {
+    @apply nt-max-container flex flex-col justify-center items-center gap-10 bg-background-stroke-middle;
+
+    .nt-usecase-wrap{
+        @apply flex flex-col items-center gap-3 w-[588px];
+        p{
+            @apply text-container-text-primary text-lg;
+        }
+        h1{
+            @apply text-typography-heading text-center text-lg_2x
+        }
+        .nt-card-wrap{
+            
+            @apply flex p-[6px] justify-center items-center gap-4 border border-background-stroke-surface rounded-xl bg-background-fill-surface;
+
+            .nt-bg-primary{
+                @apply bg-component-fill-primary
+            }
+            .nt-bg-soft{
+                @apply bg-component-fill-dark-soft
+            }
+            .nt-svg-wrap{
+                
+                @apply flex py-1 p-2 items-center gap-[6px] border border-transparent rounded-lg;
+
+                .nt-text-dark{
+                    @apply text-component-text-dark;
+                }
+                .nt-text-light{
+                    @apply text-component-text-light-fixed;
+                }
+
+                span{
+                    @apply  text-xs
+                }
+
+            }
+              
+
+        }
+        .nt-body-container{
+            @apply flex justify-between items-center w-[1200px];
+
+            .nt-body-wrap{
+                @apply flex flex-col shrink-0 items-start gap-6 w-[486px];
+
+                .nt-header-wrap{
+                    @apply flex flex-col items-start gap-[14px] self-stretch;
+
+                    h1{
+                        @apply text-typography-sub-heading text-lg font-medium text-left;
+                    }
+                    p{
+                        @apply text-typography-paragraph-soft;
+                    }
+                }
+            }
+            .nt-avatar-container{
+                @apply flex flex-col items-start gap-5;
+
+                .nt-avatar-wrap{
+                    @apply flex items-start gap-3;
+
+                    .nt-img-wrap{
+                        @apply size-10 border border-background-stroke-inner rounded-[48px] relative;
+                    }
+                    h3{
+                        @apply text-typography-sub-heading text-xs font-semibold;
+                    }
+                    p{
+                        @apply text-typography-paragraph-soft text-xs;
+                    }
+                    button{
+                        @apply flex items-center gap-2;
+                    }
+                    span{
+                        @apply text-component-text-secondary;
+                    }
+                }
+            }
+            
+            .nt-img-wrap{
+                @apply w-[594px] h-[371px] shrink-0 border-[6px] border-white bg-lavender-bloom rounded-2xl relative;
+            }
+        }
+    }
+}
+
+// testimonial
+.nt-testimonial-container{
+    @apply nt-max-container bg-background-stroke-middle flex flex-col items-center gap-10;
+
+    .nt-header-wrap{
+        @apply flex w-[588px] flex-col items-center gap-3;
+
+        p{
+            @apply text-container-text-primary text-center text-lg;
+        }
+    }
+
+    .nt-card-wrap{
+        @apply flex items-start gap-6;
+
+        .nt-card-container{
+            @apply flex flex-col items-start gap-6 w-[282px] p-6 border border-transparent rounded-xl bg-background-fill-surface;
+
+            .nt-img-container{
+                @apply flex items-center gap-[14px] self-stretch;
+
+                .nt-img-wrap{
+                    @apply size-12 justify-center items-center shrink-0 border border-transparent rounded-[48px] relative;
+                }
+            }
+
+          h3{
+            @apply text-typography-sub-heading font-semibold;
+          }
+          p{
+            @apply text-typography-paragraph-soft text-xs;
+          }  
+
+        }
+    }
+}
+
+// pricing 
+.nt-pricing-container{
+    @apply nt-max-container flex flex-col justify-center items-center gap-10;
+
+    .nt-pricing-wrap{
+        @apply flex w-[588px] flex-col items-center gap-3;
+
+        p{
+            @apply text-container-text-primary text-center text-lg;
+        }
+        h2{
+            @apply text-typography-heading text-center text-lg_2x;
+        }
+    }
+
+    .nt-pricecard-wrap{
+        @apply flex items-start gap-6;
+        
+
+        .nt-pricecard-container{
+            @apply flex flex-col items-center gap-10 w-[384px] py-10 px-8 border-[1.5px] border-background-stroke-surface rounded-2xl bg-background-fill-white;
+
+            .nt-header-wrap{
+                @apply flex justify-between items-center self-stretch;
+
+                h2{
+                    @apply text-container-text-secondary text-[24px] font-semibold;
+                }
+                p{
+                    @apply text-typography-sub-heading text-lg font-medium;
+                }
+                span{
+                    @apply text-typography-sub-heading-soft text-center text-xs ml-1;
+                }
+            }
+        }
+        hr{
+            @apply w-[320px] h-[1px] border-0 bg-[#E0D2E7];
+        }
+
+        p{
+            @apply text-typography-paragraph-soft text-xs leading-[22.4px];
+        }
+
+        .nt-body-container{
+            @apply flex flex-col items-start gap-[14px] self-stretch;
+
+            .nt-body-wrap{
+                @apply flex items-center gap-[10px] self-stretch;
+
+                p{
+                    @apply text-container-text-gray leading-[20.8px];
+                }
+            }
+        }
+    }
+}
+
+// faq 
+.nt-faq-container{
+    @apply nt-max-container px-0 flex justify-center;
+
+    .nt-faq-wrap{
+        @apply flex flex-col items-center gap-10 w-[996px];
+
+        .nt-body-wrap{
+          @apply flex flex-col justify-center items-center gap-[8px] w-[588px];
+
+          h1{
+            @apply text-typography-heading text-center text-lg_2x;
+          }
+
+          p{
+            @apply text-typography-paragraph-soft text-center;
+        }
+        }
+        .nt-accordion-wrap{
+            @apply flex flex-col items-center gap-5 w-[996px];
+
+            .nt-accordion-container{
+                @apply flex flex-col items-start gap-[14px] self-stretch w-[948px] p-6 border border-background-stroke-inner;
+
+                button{
+                    @apply flex justify-between w-full;
+
+                    span{
+                        @apply text-gray-900 text-lg font-medium;
+                    }
+                }
+            .nt-text-wrap{
+                @apply grid overflow-hidden transition-all duration-300 ease-in-out;
+
+                p{
+                    @apply text-gray-500 text-md overflow-hidden;
+                }
+            }
+                
+            }
+        }
+    }
+}
+
+// blog
+.nt-blog-container{
+    @apply nt-max-container flex flex-col items-center gap-10;
+
+    .nt-header-wrap{
+        @apply flex w-[588px] flex-col items-center gap-3;
+
+        p{
+          @apply text-container-text-primary text-center text-lg; 
+        }
+
+        h2{
+            @apply text-typography-heading text-center text-lg_2x;
+        }
+    }
+    .nt-blogcard-wrap{
+        @apply flex items-start gap-6;
+
+        .nt-blogcard-container{
+            @apply flex items-start  border-background-stroke-outermost;
+
+            .nt-header-wrap{
+                @apply flex flex-col items-start gap-2;
+
+                p{
+                    @apply text-container-text-secondary font-medium leading-6;
+                }
+                h2{
+                    @apply text-typography-heading font-semibold;
+                }
+                span{
+                    @apply text-typography-body-soft leading-6;
+                }
+            }
+
+            .nt-text-wrap{
+                @apply flex items-start gap-2;
+
+                p{
+                    @apply text-component-text-tertiary text-sm py-[2px] px-2 border rounded-[99px]  border-component-stroke-tertiary bg-component-fill-tertiary-soft;
+                }
+            }
+
+        }
+    }
+    button{
+        @apply flex gap-3 py-3 px-6  border rounded-full border-container-stroke-dark bg-container-fill-light;
+    }
+}
+
+// footer 
+.nt-footer-container{
+    @apply max-w-[1440px] mx-auto px-[120px] py-[80px] bg-[#151a2d];
+
+    .nt-footer-wrap{
+        @apply text-white flex justify-between items-start;
+
+        .nt-leftside-container{
+            @apply flex flex-col gap-3 w-[282px];
+
+            h1{
+                @apply text-[24px] font-medium;
+            }
+
+            p{
+                @apply font-[14px] text-typography-body-soft leading-5;
+            }
+            .nt-icon-container{
+                @apply flex justify-start items-start gap-4;
+                
+                .nt-icno-wrap{
+                    @apply flex w-11 h-11 p-3 justify-center items-center gap-3 border border-component-stroke-dark-soft bg-component-fill-dark-soft rounded-lg;
+                }
+            }
+        }
+        .nt-rightside-container{
+            @apply flex justify-between w-[792px];
+
+            .nt-rightside-wrap{
+                @apply flex flex-col gap-4;
+
+                h3{
+                    @apply font-medium leading-6;
+                }
+                .nt-text-wrap{
+                    @apply flex flex-col gap-3 items-start text-component-text-gray;
+                }
+            }
+        }
+    }
+}
 

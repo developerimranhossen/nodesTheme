@@ -4,14 +4,12 @@ import UseCase from "../public/use-case.png";
 
 function UseCasesSection() {
   return (
-    <div className="nt-max-container flex flex-col justify-center items-center gap-10 bg-background-stroke-middle">
-      <div className="flex flex-col items-center gap-3 w-[588px]">
-        <p className="text-container-text-primary text-lg ">Use cases</p>
-        <h1 className="text-typography-heading text-center text-lg_2x">
-          For teams who create training videos at scale
-        </h1>
-        <div className="flex p-[6px] justify-center items-center gap-4 border border-background-stroke-surface rounded-xl bg-background-fill-surface">
-          <div className="flex py-1 p-2 items-center gap-[6px] bg-component-fill-primary border border-transparent rounded-lg">
+    <div className="nt-usecase-container">
+      <div className="nt-usecase-wrap">
+        <p>Use cases</p>
+        <h1>For teams who create training videos at scale</h1>
+        <div className="nt-card-wrap">
+          <div className="nt-svg-wrap nt-bg-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="11"
@@ -26,11 +24,9 @@ function UseCasesSection() {
                 fill="white"
               />
             </svg>
-            <span className="text-component-text-light-fixed text-xs">
-              Learning and development
-            </span>
+            <span className="nt-text-light">Learning and development</span>
           </div>
-          <div className="flex py-1 p-2 items-center gap-[6px] bg-component-fill-dark-soft border border-transparent rounded-lg">
+          <div className="nt-svg-wrap nt-bg-soft">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -45,11 +41,9 @@ function UseCasesSection() {
                 fill="#151A2D"
               />
             </svg>
-            <span className="text-component-text-dark text-xs">
-              Learning and development
-            </span>
+            <span className="nt-text-dark">Learning and development</span>
           </div>
-          <div className="flex py-1 p-2 items-center gap-[6px] bg-component-fill-dark-soft border border-transparent rounded-lg">
+          <div className="nt-svg-wrap nt-bg-soft">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -64,11 +58,9 @@ function UseCasesSection() {
                 fill="#151A2D"
               />
             </svg>
-            <span className="text-component-text-dark text-xs">
-              Customer services
-            </span>
+            <span className="nt-text-dark">Customer services</span>
           </div>
-          <div className="flex py-1 p-2 items-center gap-[6px] bg-component-fill-dark-soft border border-transparent rounded-lg">
+          <div className="nt-svg-wrap nt-bg-soft">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -83,38 +75,36 @@ function UseCasesSection() {
                 fill="#151A2D"
               />
             </svg>
-            <span className="text-component-text-dark text-xs">
-              Customer services
-            </span>
+            <span className="nt-text-dark">Customer services</span>
           </div>
         </div>
-        <div className="flex justify-between items-center w-[1200px] ">
-          <div className="flex flex-col shrink-0 items-start gap-6 w-[486px] ">
-            <div className="flex flex-col items-start gap-[14px] self-stretch">
-              <h1 className="text-typography-sub-heading text-lg font-medium">
+        <div className="nt-body-container">
+          <div className="nt-body-wrap">
+            <div className="nt-header-wrap">
+              <h1>
                 Replace boring text, PowerPoints and PDFs with engaging videos
                 your team will love
               </h1>
-              <p className="text-typography-paragraph-soft">
+              <p>
                 "Usually, our colleagues don't jump in the air when they hear
                 e-learning, but the AI videos created with Synthesia have
                 sparked motivation that we haven't seen before."
               </p>
             </div>
-            <div className="flex flex-col items-start gap-5">
-              <div className="flex items-center gap-3">
-                <div className="size-10 border border-background-stroke-inner rounded-[48px] relative">
+            <div className="nt-avatar-container">
+              <div className="nt-avatar-wrap">
+                <div className="nt-img-wrap">
                   <Image src={AvatarImg} fill alt="avatar" />
                 </div>
                 <div className="">
-                  <h3 className="text-typography-sub-heading text-xs font-semibold">
+                  <h3>
                     Jesper B.
                   </h3>
-                  <p className="text-typography-paragraph-soft text-xs">
+                  <p className="">
                     Learning Specialist at BESTSELLER
                   </p>
-                  <button className="flex items-center gap-2">
-                    <span className="text-component-text-secondary">
+                  <button>
+                    <span>
                       Learn more
                     </span>
                     <svg
@@ -134,7 +124,7 @@ function UseCasesSection() {
               </div>
             </div>
           </div>
-          <div className="w-[594px] h-[371px] shrink-0 border-[6px] border-white bg-lavender-bloom rounded-2xl relative">
+          <div className="nt-img-wrap">
             <Image src={UseCase} fill alt="use" />
           </div>
         </div>
