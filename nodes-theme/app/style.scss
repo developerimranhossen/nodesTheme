@@ -549,3 +549,102 @@ html{
         @apply grid grid-cols-3 gap-y-8;
     }
 }
+
+// start sigleBlog page
+
+// body
+.nt-blogdetails-container{
+    @apply nt-max-container;
+
+    button{
+        @apply flex py-2 px-[10px] items-center gap-2 rounded-full bg-component-fill-dark-soft mb-8;
+        span{
+            @apply text-component-text-dark text-xs;
+        }
+    }
+    h1{
+        @apply text-typography-heading text-lg_3x mt-10
+    }
+    .nt-date{
+        @apply flex justify-between items-start self-stretch mb-3;
+
+        span{
+            @apply text-typography-caption-soft
+        }
+    }
+    hr{
+        @apply  h-[1px] border-0 bg-background-stroke-surface my-6;
+    }
+    .nt-body{
+        @apply flex flex-col items-start gap-6;
+         p{
+            @apply text-typography-body;
+         }
+
+         h3{
+            @apply text-typography-sub-heading text-lg font-semibold;
+         }
+         span{
+            @apply text-container-text-primary
+         }
+    }
+    figure{
+        @apply py-10;
+        img{
+            @apply mx-auto;
+        }
+        figcaption{
+            @apply w-[688px] mx-auto text-typography-body-soft text-xs;
+        }
+    }
+    .nt-blog-guide{
+        @apply flex flex-col gap-6 self-stretch;
+
+        h2{
+            @apply text-typography-sub-heading text-lg_2x font-semibold;
+        }
+        .nt-guide-wrap{
+            @apply flex items-start gap-[14px] w-[792px] mx-auto;
+
+            h4{
+                @apply text-typography-body text-md font-medium;
+            }
+            p{
+                @apply text-typography-body mt-4;
+            }
+        }
+    }
+    p{
+        @apply text-typography-body mt-10;
+    }
+
+    .nt-bloglogo-container{
+        @apply flex justify-between items-center self-stretch;
+        
+        p{
+            @apply flex items-start justify-center gap-2 text-typography-caption-soft;
+        }
+
+        .nt-logo-wrap{
+            @apply flex justify-center items-start gap-4;
+
+            span{
+                @apply size-12 p-3 border rounded-lg bg-container-fill-dark-soft text-center;
+            }
+        }
+    }
+    .nt-article-container{
+        @apply py-20;
+
+        h3{
+            @apply text-typography-heading text-lg_2x font-medium;
+        }
+
+        .nt-blogcard-wrap{
+            @apply mt-8 flex gap-6;
+        }
+    }
+    
+}
+
+// end singleBlog page

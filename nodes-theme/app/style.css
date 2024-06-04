@@ -428,4 +428,86 @@ html {
 }
 .nt-allblog-container .nt-allblog-wrap {
   @apply grid grid-cols-3 gap-y-8;
+}
+
+.nt-blogdetails-container {
+  @apply nt-max-container;
+}
+.nt-blogdetails-container button {
+  @apply flex py-2 px-[10px] items-center gap-2 rounded-full bg-component-fill-dark-soft mb-8;
+}
+.nt-blogdetails-container button span {
+  @apply text-component-text-dark text-xs;
+}
+.nt-blogdetails-container h1 {
+  @apply text-typography-heading text-lg_3x mt-10;
+}
+.nt-blogdetails-container .nt-date {
+  @apply flex justify-between items-start self-stretch mb-3;
+}
+.nt-blogdetails-container .nt-date span {
+  @apply text-typography-caption-soft;
+}
+.nt-blogdetails-container hr {
+  @apply h-[1px] border-0 bg-background-stroke-surface my-6;
+}
+.nt-blogdetails-container .nt-body {
+  @apply flex flex-col items-start gap-6;
+}
+.nt-blogdetails-container .nt-body p {
+  @apply text-typography-body;
+}
+.nt-blogdetails-container .nt-body h3 {
+  @apply text-typography-sub-heading text-lg font-semibold;
+}
+.nt-blogdetails-container .nt-body span {
+  @apply text-container-text-primary;
+}
+.nt-blogdetails-container figure {
+  @apply py-10;
+}
+.nt-blogdetails-container figure img {
+  @apply mx-auto;
+}
+.nt-blogdetails-container figure figcaption {
+  @apply w-[688px] mx-auto text-typography-body-soft text-xs;
+}
+.nt-blogdetails-container .nt-blog-guide {
+  @apply flex flex-col gap-6 self-stretch;
+}
+.nt-blogdetails-container .nt-blog-guide h2 {
+  @apply text-typography-sub-heading text-lg_2x font-semibold;
+}
+.nt-blogdetails-container .nt-blog-guide .nt-guide-wrap {
+  @apply flex items-start gap-[14px] w-[792px] mx-auto;
+}
+.nt-blogdetails-container .nt-blog-guide .nt-guide-wrap h4 {
+  @apply text-typography-body text-md font-medium;
+}
+.nt-blogdetails-container .nt-blog-guide .nt-guide-wrap p {
+  @apply text-typography-body mt-4;
+}
+.nt-blogdetails-container p {
+  @apply text-typography-body mt-10;
+}
+.nt-blogdetails-container .nt-bloglogo-container {
+  @apply flex justify-between items-center self-stretch;
+}
+.nt-blogdetails-container .nt-bloglogo-container p {
+  @apply flex items-start justify-center gap-2 text-typography-caption-soft;
+}
+.nt-blogdetails-container .nt-bloglogo-container .nt-logo-wrap {
+  @apply flex justify-center items-start gap-4;
+}
+.nt-blogdetails-container .nt-bloglogo-container .nt-logo-wrap span {
+  @apply size-12 p-3 border rounded-lg bg-container-fill-dark-soft text-center;
+}
+.nt-blogdetails-container .nt-article-container {
+  @apply py-20;
+}
+.nt-blogdetails-container .nt-article-container h3 {
+  @apply text-typography-heading text-lg_2x font-medium;
+}
+.nt-blogdetails-container .nt-article-container .nt-blogcard-wrap {
+  @apply mt-8 flex gap-6;
 }/*# sourceMappingURL=style.css.map */
