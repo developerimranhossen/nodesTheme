@@ -24,25 +24,31 @@ html {
   @apply nt-btn text-component-text-light-fixed bg-component-fill-primary;
 }
 
-.nt-hero {
+.nt-home-hero {
   @apply max-w-[792px] mx-auto mt-[77px] flex flex-col gap-4 text-center;
 }
-.nt-hero p {
+.nt-home-hero p {
   @apply text-typography-sub-heading-soft text-lg;
 }
-.nt-hero .nt-hero-header-wrap h1 {
+.nt-home-hero .nt-hero-header-wrap h1 {
   @apply text-typography-display text-lg_4x;
 }
-.nt-hero .nt-hero-header-wrap span {
+.nt-home-hero .nt-hero-header-wrap span {
   @apply relative bg-website bg-clip-text text-fill-color-transparent font-medium;
 }
-.nt-hero .nt-hero-header-wrap svg {
+.nt-home-hero .nt-hero-header-wrap svg {
   @apply absolute -top-6 -left-[40px] -z-10;
 }
-.nt-hero .hero-button-wrap {
+.nt-home-hero .hero-button-wrap {
   @apply flex justify-center items-start gap-6;
 }
-.nt-hero .nt-span-wrap {
+.nt-home-hero .hero-button-wrap .nt-btn-success {
+  @apply text-component-text-secondary border-component-stroke-secondary-soft bg-component-fill-secondary-soft;
+}
+.nt-home-hero .hero-button-wrap .nt-btn-primary {
+  @apply bg-component-fill-primary text-component-text-light-fixed;
+}
+.nt-home-hero .nt-span-wrap {
   @apply flex justify-center items-center gap-10 text-typography-paragraph-soft text-md;
 }
 
@@ -59,25 +65,449 @@ html {
   @apply rounded-[18px] shadow-2xl -z-10;
 }
 
-.nt-task {
+.nt-task-container {
   @apply nt-max-container flex justify-between items-center;
 }
 
-.nt-user {
+.nt-user-container {
   @apply nt-max-container flex flex-col items-center gap-10;
 }
-.nt-user .nt-user-wrap {
+.nt-user-container .nt-user-wrap {
   @apply w-[450px] flex flex-col justify-center items-center gap-3;
 }
-.nt-user .nt-user-wrap .nt-user-svg-wrap {
+.nt-user-container .nt-user-wrap .nt-user-svg-wrap {
   @apply flex items-center gap-[10px];
 }
-.nt-user .nt-user-wrap .nt-user-text-wrap {
+.nt-user-container .nt-user-wrap .nt-user-text-wrap {
   @apply flex flex-col items-center gap-2 self-stretch;
 }
-.nt-user .nt-user-wrap .nt-user-text-wrap h1 {
+.nt-user-container .nt-user-wrap .nt-user-text-wrap h1 {
   @apply text-typography-heading text-center text-lg_2x;
 }
-.nt-user .nt-user-wrap .nt-user-text-wrap p {
+.nt-user-container .nt-user-wrap .nt-user-text-wrap p {
   @apply text-typography-paragraph-soft;
+}
+
+.nt-logo-container {
+  @apply nt-max-container flex justify-between items-center bg-background-stroke-middle;
+}
+
+.nt-program-container {
+  @apply nt-max-container flex flex-col justify-center items-center gap-10;
+}
+.nt-program-container .nt-header-wrap {
+  @apply flex flex-col justify-center items-center gap-[8px] w-[588px];
+}
+.nt-program-container .nt-header-wrap h1 {
+  @apply text-typography-heading text-center text-lg_2x;
+}
+.nt-program-container .nt-header-wrap p {
+  @apply text-typography-paragraph-soft text-center;
+}
+.nt-program-container .nt-header-wrap .nt-svg-wrap {
+  @apply flex items-center gap-3;
+}
+.nt-program-container .nt-programcard-wrap {
+  @apply flex gap-6 flex-wrap;
+}
+
+.nt-usecase-container {
+  @apply nt-max-container flex flex-col justify-center items-center gap-10 bg-background-stroke-middle;
+}
+.nt-usecase-container .nt-usecase-wrap {
+  @apply flex flex-col items-center gap-3 w-[588px];
+}
+.nt-usecase-container .nt-usecase-wrap p {
+  @apply text-container-text-primary text-lg;
+}
+.nt-usecase-container .nt-usecase-wrap h1 {
+  @apply text-typography-heading text-center text-lg_2x;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap {
+  @apply flex p-[6px] justify-center items-center gap-4 border border-background-stroke-surface rounded-xl bg-background-fill-surface;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap .nt-bg-primary {
+  @apply bg-component-fill-primary;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap .nt-bg-soft {
+  @apply bg-component-fill-dark-soft;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap .nt-svg-wrap {
+  @apply flex py-1 p-2 items-center gap-[6px] border border-transparent rounded-lg;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap .nt-svg-wrap .nt-text-dark {
+  @apply text-component-text-dark;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap .nt-svg-wrap .nt-text-light {
+  @apply text-component-text-light-fixed;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-card-wrap .nt-svg-wrap span {
+  @apply text-xs;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container {
+  @apply flex justify-between items-center w-[1200px];
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-body-wrap {
+  @apply flex flex-col shrink-0 items-start gap-6 w-[486px];
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-body-wrap .nt-header-wrap {
+  @apply flex flex-col items-start gap-[14px] self-stretch;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-body-wrap .nt-header-wrap h1 {
+  @apply text-typography-sub-heading text-lg font-medium text-left;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-body-wrap .nt-header-wrap p {
+  @apply text-typography-paragraph-soft;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container {
+  @apply flex flex-col items-start gap-5;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container .nt-avatar-wrap {
+  @apply flex items-start gap-3;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container .nt-avatar-wrap .nt-img-wrap {
+  @apply size-10 border border-background-stroke-inner rounded-[48px] relative;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container .nt-avatar-wrap h3 {
+  @apply text-typography-sub-heading text-xs font-semibold;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container .nt-avatar-wrap p {
+  @apply text-typography-paragraph-soft text-xs;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container .nt-avatar-wrap button {
+  @apply flex items-center gap-2;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-avatar-container .nt-avatar-wrap span {
+  @apply text-component-text-secondary;
+}
+.nt-usecase-container .nt-usecase-wrap .nt-body-container .nt-img-wrap {
+  @apply w-[594px] h-[371px] shrink-0 border-[6px] border-white bg-lavender-bloom rounded-2xl relative;
+}
+
+.nt-testimonial-container {
+  @apply nt-max-container bg-background-stroke-middle flex flex-col items-center gap-10;
+}
+.nt-testimonial-container .nt-header-wrap {
+  @apply flex w-[588px] flex-col items-center gap-3;
+}
+.nt-testimonial-container .nt-header-wrap p {
+  @apply text-container-text-primary text-center text-lg;
+}
+.nt-testimonial-container .nt-card-wrap {
+  @apply flex items-start gap-6;
+}
+.nt-testimonial-container .nt-card-wrap .nt-card-container {
+  @apply flex flex-col items-start gap-6 w-[282px] p-6 border border-transparent rounded-xl bg-background-fill-surface;
+}
+.nt-testimonial-container .nt-card-wrap .nt-card-container .nt-img-container {
+  @apply flex items-center gap-[14px] self-stretch;
+}
+.nt-testimonial-container .nt-card-wrap .nt-card-container .nt-img-container .nt-img-wrap {
+  @apply size-12 justify-center items-center shrink-0 border border-transparent rounded-[48px] relative;
+}
+.nt-testimonial-container .nt-card-wrap .nt-card-container h3 {
+  @apply text-typography-sub-heading font-semibold;
+}
+.nt-testimonial-container .nt-card-wrap .nt-card-container p {
+  @apply text-typography-paragraph-soft text-xs;
+}
+
+.nt-pricing-container {
+  @apply nt-max-container flex flex-col justify-center items-center gap-10;
+}
+.nt-pricing-container .nt-pricing-wrap {
+  @apply flex w-[588px] flex-col items-center gap-3;
+}
+.nt-pricing-container .nt-pricing-wrap p {
+  @apply text-container-text-primary text-center text-lg;
+}
+.nt-pricing-container .nt-pricing-wrap h2 {
+  @apply text-typography-heading text-center text-lg_2x;
+}
+.nt-pricing-container .nt-pricecard-wrap {
+  @apply flex items-start gap-6;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-pricecard-container {
+  @apply flex flex-col items-center gap-10 w-[384px] py-10 px-8 border-[1.5px] border-background-stroke-surface rounded-2xl bg-background-fill-white;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-pricecard-container .nt-header-wrap {
+  @apply flex justify-between items-center self-stretch;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-pricecard-container .nt-header-wrap h2 {
+  @apply text-container-text-secondary text-[24px] font-semibold;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-pricecard-container .nt-header-wrap p {
+  @apply text-typography-sub-heading text-lg font-medium;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-pricecard-container .nt-header-wrap span {
+  @apply text-typography-sub-heading-soft text-center text-xs ml-1;
+}
+.nt-pricing-container .nt-pricecard-wrap hr {
+  @apply w-[320px] h-[1px] border-0 bg-[#E0D2E7];
+}
+.nt-pricing-container .nt-pricecard-wrap p {
+  @apply text-typography-paragraph-soft text-xs leading-[22.4px];
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-body-container {
+  @apply flex flex-col items-start gap-[14px] self-stretch;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-body-container .nt-body-wrap {
+  @apply flex items-center gap-[10px] self-stretch;
+}
+.nt-pricing-container .nt-pricecard-wrap .nt-body-container .nt-body-wrap p {
+  @apply text-container-text-gray leading-[20.8px];
+}
+
+.nt-faq-container {
+  @apply nt-max-container px-0 flex justify-center;
+}
+.nt-faq-container .nt-faq-wrap {
+  @apply flex flex-col items-center gap-10 w-[996px];
+}
+.nt-faq-container .nt-faq-wrap .nt-body-wrap {
+  @apply flex flex-col justify-center items-center gap-[8px] w-[588px];
+}
+.nt-faq-container .nt-faq-wrap .nt-body-wrap h1 {
+  @apply text-typography-heading text-center text-lg_2x;
+}
+.nt-faq-container .nt-faq-wrap .nt-body-wrap p {
+  @apply text-typography-paragraph-soft text-center;
+}
+.nt-faq-container .nt-faq-wrap .nt-accordion-wrap {
+  @apply flex flex-col items-center gap-5 w-[996px];
+}
+.nt-faq-container .nt-faq-wrap .nt-accordion-wrap .nt-accordion-container {
+  @apply flex flex-col items-start gap-[14px] self-stretch w-[948px] p-6 border border-background-stroke-inner;
+}
+.nt-faq-container .nt-faq-wrap .nt-accordion-wrap .nt-accordion-container button {
+  @apply flex justify-between w-full;
+}
+.nt-faq-container .nt-faq-wrap .nt-accordion-wrap .nt-accordion-container button span {
+  @apply text-gray-900 text-lg font-medium;
+}
+.nt-faq-container .nt-faq-wrap .nt-accordion-wrap .nt-accordion-container .nt-text-wrap {
+  @apply grid overflow-hidden transition-all duration-300 ease-in-out;
+}
+.nt-faq-container .nt-faq-wrap .nt-accordion-wrap .nt-accordion-container .nt-text-wrap p {
+  @apply text-gray-500 text-md overflow-hidden;
+}
+
+.nt-blogcard-container {
+  @apply flex items-start  border-background-stroke-outermost;
+}
+.nt-blogcard-container .nt-header-wrap {
+  @apply flex flex-col items-start gap-2;
+}
+.nt-blogcard-container .nt-header-wrap h5 {
+  @apply text-container-text-secondary font-medium leading-6;
+}
+.nt-blogcard-container .nt-header-wrap h6 {
+  @apply text-typography-heading font-semibold;
+}
+.nt-blogcard-container .nt-header-wrap span {
+  @apply text-typography-body-soft leading-6;
+}
+.nt-blogcard-container .nt-text-wrap {
+  @apply flex items-start gap-2;
+}
+.nt-blogcard-container .nt-text-wrap p {
+  @apply text-component-text-tertiary text-sm py-[2px] px-2 border rounded-[99px]  border-component-stroke-tertiary bg-component-fill-tertiary-soft;
+}
+
+.nt-blog-container {
+  @apply nt-max-container flex flex-col items-center gap-10;
+}
+.nt-blog-container .nt-blog-header-wrap {
+  @apply flex w-[588px] flex-col items-center gap-3;
+}
+.nt-blog-container .nt-blog-header-wrap h4 {
+  @apply text-container-text-primary text-center text-lg;
+}
+.nt-blog-container .nt-blog-header-wrap h3 {
+  @apply text-typography-heading text-center text-lg_2x;
+}
+.nt-blog-container .nt-left-blogcard {
+  @apply flex items-start gap-6;
+}
+.nt-blog-container .nt-left-blogcard .nt-right-blogcard {
+  @apply flex flex-col justify-between items-start self-stretch gap-4;
+}
+.nt-blog-container button {
+  @apply flex gap-3 py-3 px-6  border rounded-full border-container-stroke-dark bg-container-fill-light;
+}
+
+.nt-footer-container {
+  @apply max-w-[1440px] mx-auto px-[120px] py-[80px] bg-[#151a2d];
+}
+.nt-footer-container .nt-footer-wrap {
+  @apply text-white flex justify-between items-start;
+}
+.nt-footer-container .nt-footer-wrap .nt-leftside-container {
+  @apply flex flex-col gap-3 w-[282px];
+}
+.nt-footer-container .nt-footer-wrap .nt-leftside-container h1 {
+  @apply text-[24px] font-medium;
+}
+.nt-footer-container .nt-footer-wrap .nt-leftside-container p {
+  @apply font-[14px] text-typography-body-soft leading-5;
+}
+.nt-footer-container .nt-footer-wrap .nt-leftside-container .nt-icon-container {
+  @apply flex justify-start items-start gap-4;
+}
+.nt-footer-container .nt-footer-wrap .nt-leftside-container .nt-icon-container .nt-icno-wrap {
+  @apply flex w-11 h-11 p-3 justify-center items-center gap-3 border border-component-stroke-dark-soft bg-component-fill-dark-soft rounded-lg;
+}
+.nt-footer-container .nt-footer-wrap .nt-rightside-container {
+  @apply flex justify-between w-[792px];
+}
+.nt-footer-container .nt-footer-wrap .nt-rightside-container .nt-rightside-wrap {
+  @apply flex flex-col gap-4;
+}
+.nt-footer-container .nt-footer-wrap .nt-rightside-container .nt-rightside-wrap h3 {
+  @apply font-medium leading-6;
+}
+.nt-footer-container .nt-footer-wrap .nt-rightside-container .nt-rightside-wrap .nt-text-wrap {
+  @apply flex flex-col gap-3 items-start text-component-text-gray;
+}
+
+.nt-blog-hero {
+  @apply flex flex-col items-center gap-6 nt-max-container;
+}
+.nt-blog-hero .nt-header-wrap {
+  @apply flex w-[996px] flex-col items-center gap-3 mx-auto relative;
+}
+.nt-blog-hero .nt-header-wrap h1 {
+  @apply text-typography-heading text-center text-[64px] font-medium leading-[84px];
+}
+.nt-blog-hero .nt-header-wrap p {
+  @apply text-typography-paragraph-soft text-center text-[18px] leading-7;
+}
+.nt-blog-hero form {
+  @apply flex w-[588px] p-1 justify-between items-center rounded-lg border border-component-stroke-dark-soft bg-component-fill-light mx-auto;
+}
+.nt-blog-hero form .nt-input-container {
+  @apply flex p-[10px] items-center gap-2;
+}
+.nt-blog-hero form .nt-input-container input {
+  @apply text-component-text-gray  text-sm;
+}
+.nt-blog-hero form .nt-button-container {
+  @apply flex items-start;
+}
+.nt-blog-hero form .nt-button-container .nt-button-wrap {
+  @apply flex p-3 justify-center items-center gap-4 border rounded-lg bg-component-fill-primary;
+}
+.nt-blog-hero form .nt-button-container .nt-button-wrap button {
+  @apply text-component-text-light-fixed text-center text-sm;
+}
+
+.nt-blogsbody-container {
+  @apply max-w-[1440px] px-[120px] py-[80px] flex flex-col gap-8 mx-auto;
+}
+.nt-blogsbody-container .nt-header-wrap {
+  @apply flex items-start gap-2;
+}
+.nt-blogsbody-container .nt-header-wrap h3 {
+  @apply text-typography-heading text-center text-lg_2x font-medium leading-[52px];
+}
+.nt-blogsbody-container .nt-left-blogcard {
+  @apply flex items-start gap-6;
+}
+.nt-blogsbody-container .nt-left-blogcard .nt-right-blogcard {
+  @apply flex flex-col justify-between items-start self-stretch gap-4;
+}
+
+.nt-allblog-container {
+  @apply nt-max-container flex flex-col gap-8;
+}
+.nt-allblog-container .nt-header-wrap {
+  @apply flex items-start gap-2;
+}
+.nt-allblog-container .nt-header-wrap h1 {
+  @apply text-typography-heading text-center text-lg_2x font-medium leading-[52px];
+}
+.nt-allblog-container .nt-allblog-wrap {
+  @apply grid grid-cols-3 gap-y-8;
+}
+
+.nt-blogdetails-container {
+  @apply nt-max-container;
+}
+.nt-blogdetails-container button {
+  @apply flex py-2 px-[10px] items-center gap-2 rounded-full bg-component-fill-dark-soft mb-8;
+}
+.nt-blogdetails-container button span {
+  @apply text-component-text-dark text-xs;
+}
+.nt-blogdetails-container h1 {
+  @apply text-typography-heading text-lg_3x mt-10;
+}
+.nt-blogdetails-container .nt-date {
+  @apply flex justify-between items-start self-stretch mb-3;
+}
+.nt-blogdetails-container .nt-date span {
+  @apply text-typography-caption-soft;
+}
+.nt-blogdetails-container hr {
+  @apply h-[1px] border-0 bg-background-stroke-surface my-6;
+}
+.nt-blogdetails-container .nt-body {
+  @apply flex flex-col items-start gap-6;
+}
+.nt-blogdetails-container .nt-body p {
+  @apply text-typography-body;
+}
+.nt-blogdetails-container .nt-body h3 {
+  @apply text-typography-sub-heading text-lg font-semibold;
+}
+.nt-blogdetails-container .nt-body span {
+  @apply text-container-text-primary;
+}
+.nt-blogdetails-container figure {
+  @apply py-10;
+}
+.nt-blogdetails-container figure img {
+  @apply mx-auto;
+}
+.nt-blogdetails-container figure figcaption {
+  @apply w-[688px] mx-auto text-typography-body-soft text-xs;
+}
+.nt-blogdetails-container .nt-blog-guide {
+  @apply flex flex-col gap-6 self-stretch;
+}
+.nt-blogdetails-container .nt-blog-guide h2 {
+  @apply text-typography-sub-heading text-lg_2x font-semibold;
+}
+.nt-blogdetails-container .nt-blog-guide .nt-guide-wrap {
+  @apply flex items-start gap-[14px] w-[792px] mx-auto;
+}
+.nt-blogdetails-container .nt-blog-guide .nt-guide-wrap h4 {
+  @apply text-typography-body text-md font-medium;
+}
+.nt-blogdetails-container .nt-blog-guide .nt-guide-wrap p {
+  @apply text-typography-body mt-4;
+}
+.nt-blogdetails-container p {
+  @apply text-typography-body mt-10;
+}
+.nt-blogdetails-container .nt-bloglogo-container {
+  @apply flex justify-between items-center self-stretch;
+}
+.nt-blogdetails-container .nt-bloglogo-container p {
+  @apply flex items-start justify-center gap-2 text-typography-caption-soft;
+}
+.nt-blogdetails-container .nt-bloglogo-container .nt-logo-wrap {
+  @apply flex justify-center items-start gap-4;
+}
+.nt-blogdetails-container .nt-bloglogo-container .nt-logo-wrap span {
+  @apply size-12 p-3 border rounded-lg bg-container-fill-dark-soft text-center;
+}
+.nt-blogdetails-container .nt-article-container {
+  @apply py-20;
+}
+.nt-blogdetails-container .nt-article-container h3 {
+  @apply text-typography-heading text-lg_2x font-medium;
+}
+.nt-blogdetails-container .nt-article-container .nt-blogcard-wrap {
+  @apply mt-8 flex gap-6;
 }/*# sourceMappingURL=style.css.map */
