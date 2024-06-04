@@ -19,6 +19,7 @@ html{
 // Module spesific
 
 
+
 //start home page
 // nav
 
@@ -64,6 +65,13 @@ html{
     }
     .hero-button-wrap {
         @apply flex justify-center items-start gap-6;
+        
+        .nt-btn-success{
+            @apply text-component-text-secondary border-component-stroke-secondary-soft bg-component-fill-secondary-soft;
+        }
+        .nt-btn-primary{
+            @apply bg-component-fill-primary text-component-text-light-fixed;
+        }
     }
 
     .nt-span-wrap {

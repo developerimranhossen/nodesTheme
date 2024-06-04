@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import './style.css';
+import "./style.css";
 
 // NT Components
 import Navbar from "../components/Navbar";

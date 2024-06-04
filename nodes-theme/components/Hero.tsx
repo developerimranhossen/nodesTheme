@@ -8,7 +8,7 @@ function Hero({ className }: props) {
   return (
     <div className={`${className} nt-home-hero`}>
       <p>Smart web builder, made for Developers</p>
-      <div className="nt-header-wrap">
+      <div className="nt-hero-header-wrap">
         <h1>
           Create any{" "}
           <span>
