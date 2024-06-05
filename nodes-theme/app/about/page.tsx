@@ -1,4 +1,5 @@
 import Hero from "../../components/about/Hero";
+import Member from "../../components/about/Member";
 import Quality from "../../components/about/Quality";
 import Team from "../../components/about/Team";
 
@@ -29,6 +30,14 @@ function Aboutpage() {
         </div>
       </section>
       {/* End Team */}
+      <section className="nt-section nt-member">
+        <div className="nt-row">
+          <div className="nt-col nt-member-A">
+            <Member />
+          </div>
+        </div>
+      </section>
+      {/* End Member */}
     </div>
   );
 }
