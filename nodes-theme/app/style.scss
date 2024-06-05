@@ -125,7 +125,7 @@ html{
 
 // client 
 .nt-logo-container {
-    @apply nt-max-container flex justify-between items-center bg-background-stroke-middle
+    @apply nt-max-container flex justify-between items-center;
 }
 
 .nt-program-container {

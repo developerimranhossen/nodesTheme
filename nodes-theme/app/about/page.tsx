@@ -1,3 +1,4 @@
+import LogoSection from "../../components/LogoSection";
 import Hero from "../../components/about/Hero";
 import Member from "../../components/about/Member";
 import Quality from "../../components/about/Quality";
@@ -38,6 +39,14 @@ function Aboutpage() {
         </div>
       </section>
       {/* End Member */}
+      <section className="nt-section nt-log">
+        <div className="nt-row">
+          <div className="nt-col nt-logo-A">
+            <LogoSection backgourd={false} />
+          </div>
+        </div>
+      </section>
+      {/* End LogoSection */}
     </div>
   );
 }
