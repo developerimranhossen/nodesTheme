@@ -1,5 +1,6 @@
 import Hero from "../../components/about/Hero";
 import Quality from "../../components/about/Quality";
+import Team from "../../components/about/Team";
 
 function Aboutpage() {
   return (
@@ -20,6 +21,14 @@ function Aboutpage() {
         </div>
       </section>
       {/* End Hero */}
+      <section className="nt-section nt-team">
+        <div className="nt-row">
+          <div className="nt-col nt-team-A">
+            <Team />
+          </div>
+        </div>
+      </section>
+      {/* End Team */}
     </div>
   );
 }

@@ -720,6 +720,34 @@ html{
         
     }
 
+    .nt-team-container{
+        @apply nt-max-container text-center;
+
+        h3{
+            @apply text-container-text-primary text-lg leading-[30px]
+        }
+        h2{
+            @apply text-typography-heading text-lg_2x font-medium;
+        }
+        .nt-card-wrap{
+            @apply flex justify-between items-center self-stretch mt-10;
+
+            .nt-team-card{
+                @apply w-[280px];
+
+                img{
+                    @apply mx-auto;
+                }
+                h1{
+                    @apply text-typography-sub-heading text-lg leading-[30px] font-semibold mt-4;
+                }
+                p{
+                    @apply text-typography-caption-soft;
+                }
+            }
+        }
+    }
+
     
 }
 
