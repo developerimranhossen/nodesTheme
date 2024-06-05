@@ -648,3 +648,52 @@ html{
 }
 
 // end singleBlog page
+
+//start about page
+
+.nt-page-about{
+
+    .nt-hero-container{
+
+        .nt-about-cover-img{
+            @apply w-[1440px] h-[487px] mx-auto relative mt-5;
+        }
+        .nt-body-container{
+            @apply nt-max-container;
+
+            h1{
+                @apply text-typography-display text-lg_3x;
+            }
+            .nt-body-card-wrap{
+
+                @apply flex items-start gap-6 flex-wrap;
+
+                .nt-hero-card-container{
+                    @apply flex flex-col items-start w-[384px] gap-3 mt-[60px];
+    
+                    hr{
+                        @apply h-[2px] border-0 bg-background-stroke-inner w-full;
+                    }
+                    p{
+                        @apply flex items-center gap-[6px];
+
+                        span{
+                            @apply text-typography-sub-heading text-xs font-medium ;
+                        }
+                    }
+                    h2{
+                        @apply text-typography-heading text-lg leading-[30px] font-semibold;
+                    }
+                    span{
+                        @apply text-typography-paragraph-soft
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
+}
+
+//end about page

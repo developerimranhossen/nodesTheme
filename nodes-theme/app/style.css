@@ -510,4 +510,35 @@ html {
 }
 .nt-blogdetails-container .nt-article-container .nt-blogcard-wrap {
   @apply mt-8 flex gap-6;
+}
+
+.nt-page-about .nt-hero-container .nt-about-cover-img {
+  @apply w-[1440px] h-[487px] mx-auto relative mt-5;
+}
+.nt-page-about .nt-hero-container .nt-body-container {
+  @apply nt-max-container;
+}
+.nt-page-about .nt-hero-container .nt-body-container h1 {
+  @apply text-typography-display text-lg_3x;
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap {
+  @apply flex items-start gap-6 flex-wrap;
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container {
+  @apply flex flex-col items-start w-[384px] gap-3 mt-[60px];
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container hr {
+  @apply h-[2px] border-0 bg-background-stroke-inner w-full;
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container p {
+  @apply flex items-center gap-[6px];
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container p span {
+  @apply text-typography-sub-heading text-xs font-medium;
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container h2 {
+  @apply text-typography-heading text-lg leading-[30px] font-semibold;
+}
+.nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container span {
+  @apply text-typography-paragraph-soft;
 }/*# sourceMappingURL=style.css.map */
