@@ -541,4 +541,16 @@ html {
 }
 .nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container span {
   @apply text-typography-paragraph-soft;
+}
+.nt-page-about .nt-quality-container {
+  @apply nt-max-container;
+}
+.nt-page-about .nt-quality-container h1 {
+  @apply w-[690px] text-typography-heading text-lg_3x font-medium mb-[50px];
+}
+.nt-page-about .nt-quality-container .nt-nt-quality-wrap {
+  @apply flex gap-6;
+}
+.nt-page-about .nt-quality-container .nt-nt-quality-wrap .nt-quality-card-container {
+  @apply w-[88px] h-[260px] p-6 border  rounded-[24px] hidden;
 }/*# sourceMappingURL=style.css.map */

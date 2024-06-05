@@ -693,6 +693,33 @@ html{
         
     }
 
+    .nt-quality-container{
+        @apply nt-max-container;
+
+        h1{
+            @apply w-[690px] text-typography-heading text-lg_3x font-medium mb-[50px];
+        }
+
+        .nt-quality-wrap{
+            
+            @apply flex gap-6;
+
+            
+            .nt-quality-card-container{
+                @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
+
+                h3{
+                    @apply text-lg leading-[30px] font-semibold mb-2;
+                }
+                p{
+                    @apply text-typography-paragraph-soft;
+                }
+            }
+
+        }
+        
+    }
+
     
 }
 
