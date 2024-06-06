@@ -48,7 +48,7 @@ export default function Home() {
       <section className="nt-section nt-client">
         <div className="nt-row">
           <div className="nt-col nt-logo-A">
-            <LogoSection />
+            <LogoSection backgourd={true} />
           </div>
         </div>
       </section>

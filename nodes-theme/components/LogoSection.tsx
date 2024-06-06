@@ -8,9 +8,9 @@ import Drille from "../public/logos/drille.png";
 import Kinsta from "../public/logos/kinsta.png";
 import Behance from "../public/logos/behance.png";
 
-function LogoSection() {
+function LogoSection({backgourd}) {
   return (
-    <div className="nt-logo-container">
+    <div className={`nt-logo-container ${backgourd && 'bg-background-stroke-middle'}`}>
         <Image src={Nuxt} width={98} height={24} alt=""/>
         <Image src={Miro} width={68} height={24} alt=""/>
         <Image src={Lottie} width={124} height={24} alt=""/>

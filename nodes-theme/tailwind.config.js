@@ -10,7 +10,7 @@ module.exports = {
       xs: ["14px", "20px"],
       sm: ["16px", "24px"],
       md: ["18px", "28px"],
-      lg: ["20px", "34px"],
+      lg: ["20px", "30px"],
       lg_2x: ["36px", "52px"],
       lg_3x: ["48px", "64px"],
       lg_4x: ["64px", "84px"],

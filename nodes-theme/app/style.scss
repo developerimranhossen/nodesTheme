@@ -125,7 +125,7 @@ html{
 
 // client 
 .nt-logo-container {
-    @apply nt-max-container flex justify-between items-center bg-background-stroke-middle
+    @apply nt-max-container flex justify-between items-center;
 }
 
 .nt-program-container {
@@ -648,3 +648,236 @@ html{
 }
 
 // end singleBlog page
+
+//start about page
+
+.nt-page-about{
+
+    .nt-hero-container{
+
+        .nt-about-cover-img{
+            @apply w-[1440px] h-[487px] mx-auto relative mt-5;
+        }
+        .nt-body-container{
+            @apply nt-max-container;
+
+            h1{
+                @apply text-typography-display text-lg_3x;
+            }
+            .nt-body-card-wrap{
+
+                @apply flex items-start gap-6 flex-wrap;
+
+                .nt-hero-card-container{
+                    @apply flex flex-col items-start w-[384px] gap-3 mt-[60px];
+    
+                    hr{
+                        @apply h-[2px] border-0 bg-background-stroke-inner w-full;
+                    }
+                    p{
+                        @apply flex items-center gap-[6px];
+
+                        span{
+                            @apply text-typography-sub-heading text-xs font-medium ;
+                        }
+                    }
+                    h2{
+                        @apply text-typography-heading text-lg font-semibold;
+                    }
+                    span{
+                        @apply text-typography-paragraph-soft
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .nt-quality-container{
+        @apply nt-max-container;
+
+        h1{
+            @apply w-[690px] text-typography-heading text-lg_3x font-medium mb-[50px];
+        }
+
+        .nt-quality-wrap{
+            
+            @apply flex gap-6;
+
+            
+            .nt-quality-card-container{
+                @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
+
+                h3{
+                    @apply text-lg font-semibold mb-2;
+                }
+                p{
+                    @apply text-typography-paragraph-soft;
+                }
+            }
+
+        }
+        
+    }
+
+    .nt-team-container{
+        @apply nt-max-container text-center;
+
+        h3{
+            @apply text-container-text-primary text-lg
+        }
+        h2{
+            @apply text-typography-heading text-lg_2x font-medium;
+        }
+        .nt-card-wrap{
+            @apply flex justify-between items-center self-stretch mt-10;
+
+            .nt-team-card{
+                @apply w-[280px];
+
+                img{
+                    @apply mx-auto;
+                }
+                h1{
+                    @apply text-typography-sub-heading text-lg font-semibold mt-4;
+                }
+                p{
+                    @apply text-typography-caption-soft;
+                }
+            }
+        }
+    }
+
+    .nt-member-container{
+        @apply nt-max-container flex gap-6;
+        
+        .nt-text-wrap{
+            @apply w-[588px];
+            h1{
+                @apply text-typography-heading text-lg_3x font-medium mb-6;
+            }
+            p{
+                @apply text-typography-body-soft text-md mb-10;
+            }
+            button{
+                @apply border border-component-stroke-secondary text-component-text-secondary;
+            }
+        }
+        .nt-card-wrap{
+            @apply flex items-center gap-6;
+
+            .nt-left-card{
+                @apply flex flex-col gap-6;
+            }
+
+            .nt-card-container{
+                @apply w-[282px] h-[200px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
+                h1{
+                    @apply text-white text-lg_4x font-semibold;
+                }
+                p{
+                    @apply w-[133px] text-white text-md;
+                }
+            }
+        }
+    }
+
+    .nt-review-container{
+        @apply nt-max-container flex flex-col gap-6;
+
+        .nt-review-wrap{
+            @apply py-20 px-12 text-center;
+
+            .nt-header-wrap{
+                @apply w-[585px] mx-auto;
+
+                h1{
+                    @apply text-typography-heading text-lg_3x font-semibold mb-3;
+                }
+
+                .nt-svg-wrap{
+                    @apply flex gap-1 justify-center items-center;
+                    
+                    p{
+                        @apply ml-2 text-typography-caption-soft text-md font-medium;
+                    }
+                }
+            }
+
+            .nt-body-wrap{
+                @apply flex items-center gap-[64px] mt-6;
+                
+                svg{
+                    @apply size-[42px]   rounded-[21px];
+                }
+                .nt-left-svg{
+                    @apply bg-default-icon-gray;
+                }
+                .nt-right-svg{
+                    @apply bg-default-icon-primary;
+                }
+                
+                
+            }
+            .nt-review-img{
+                @apply w-[196px] flex flex-col justify-center items-center gap-[6px] mx-auto mt-6 ;
+
+                img{
+                    @apply ring-4 rounded-full ring-component-stroke-secondary-soft;
+                }
+
+                h3{
+                    @apply text-typography-sub-heading text-lg;
+                }
+
+                .nt-svg-wrap{
+                    @apply flex gap-[8.667px]
+                }
+            }
+        }
+
+    }
+
+    .nt-message-container{
+        @apply nt-max-container flex gap-6;
+
+        .nt-left{
+            @apply w-[588px];
+            h1{
+                @apply text-typography-heading text-lg_3x font-medium mt-10;
+            }
+            p{
+                @apply text-typography-paragraph-soft text-md mt-2;
+            }
+        }
+        .nt-right{
+            @apply w-[588px];
+
+            h3{
+                @apply text-component-text-primary text-lg font-semibold mb-6;
+            }
+            form{
+                @apply flex flex-col gap-8;
+
+                .nt-input-wrap{
+                    @apply flex flex-col gap-[18px];
+                }
+                
+            }
+        }
+    }
+
+    
+}
+
+//end about page
+
+//start contact page
+.nt-contact-container{
+    @apply nt-max-container;
+
+    .nt-contact-wrap{
+        @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px]
+    }
+}
+//end contact page
