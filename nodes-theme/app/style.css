@@ -648,7 +648,7 @@ html {
   @apply w-[196px] flex flex-col justify-center items-center gap-[6px] mx-auto mt-6;
 }
 .nt-page-about .nt-review-container .nt-review-wrap .nt-review-img img {
-  @apply ring-4 rounded-full ring-component-fill-primary;
+  @apply ring-4 rounded-full ring-component-stroke-secondary-soft;
 }
 .nt-page-about .nt-review-container .nt-review-wrap .nt-review-img h3 {
   @apply text-typography-sub-heading text-lg;
