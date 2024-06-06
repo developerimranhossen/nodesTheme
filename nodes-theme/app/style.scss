@@ -870,6 +870,14 @@ html{
     
 }
 
-
-
 //end about page
+
+//start contact page
+.nt-contact-container{
+    @apply nt-max-container;
+
+    .nt-contact-wrap{
+        @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px]
+    }
+}
+//end contact page

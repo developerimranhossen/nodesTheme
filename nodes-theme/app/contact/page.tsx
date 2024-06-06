@@ -1,9 +1,19 @@
+import ContactCard from "../../components/ContactCard"
 
 
-function AboutPage() {
+function ContactPage() {
   return (
-    <div>AboutPage</div>
+    <div className="nt-page-contact">
+      <section className="nt-section nt-contact">
+        <div className="nt-row">
+          <div className="nt-col nt-contact-A">
+            <ContactCard />
+          </div>
+        </div>
+      </section>
+    </div>
+    // End ContactCard 
   )
 }
 
-export default AboutPage
+export default ContactPage

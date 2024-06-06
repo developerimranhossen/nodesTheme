@@ -679,4 +679,11 @@ html {
 }
 .nt-page-about .nt-message-container .nt-right form .nt-input-wrap {
   @apply flex flex-col gap-[18px];
+}
+
+.nt-contact-container {
+  @apply nt-max-container;
+}
+.nt-contact-container .nt-contact-wrap {
+  @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px];
 }/*# sourceMappingURL=style.css.map */
