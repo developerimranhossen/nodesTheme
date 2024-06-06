@@ -1,7 +1,5 @@
 import Image from "next/image";
 import AvatarImg from "../../public/avatar.png";
-import Input from "../auth/Input";
-import TextArea from "../auth/TextArea";
 
 function Review() {
   return (
@@ -206,12 +204,6 @@ function Review() {
             </svg>
           </div>
         </div>
-        <Input data={{type:'text', label: 'Name', placeholder: 'Enter your name'}}/>
-        <Input data={{type:'password', label: 'Email', placeholder: 'Enter your Email Address'}}/>
-
-        <TextArea data={{label: 'Write your Message', placeholder: 'Write message here...'}} />
-
-        <Input data={{type:'checkbox', label: 'You agree to our friendly privacy policy.'}}/>
       </div>
     </div>
   );
