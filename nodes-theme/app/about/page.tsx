@@ -2,6 +2,7 @@ import LogoSection from "../../components/LogoSection";
 import Hero from "../../components/about/Hero";
 import Member from "../../components/about/Member";
 import Quality from "../../components/about/Quality";
+import Review from "../../components/about/Review";
 import Team from "../../components/about/Team";
 
 function Aboutpage() {
@@ -39,7 +40,7 @@ function Aboutpage() {
         </div>
       </section>
       {/* End Member */}
-      <section className="nt-section nt-log">
+      <section className="nt-section nt-logo">
         <div className="nt-row">
           <div className="nt-col nt-logo-A">
             <LogoSection backgourd={false} />
@@ -47,6 +48,14 @@ function Aboutpage() {
         </div>
       </section>
       {/* End LogoSection */}
+      <section className="nt-section nt-review">
+        <div className="nt-row">
+          <div className="nt-col nt-review-A">
+            <Review />
+          </div>
+        </div>
+      </section>
+      {/* End Review */}
     </div>
   );
 }

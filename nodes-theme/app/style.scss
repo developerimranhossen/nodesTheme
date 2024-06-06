@@ -682,7 +682,7 @@ html{
                         }
                     }
                     h2{
-                        @apply text-typography-heading text-lg leading-[30px] font-semibold;
+                        @apply text-typography-heading text-lg font-semibold;
                     }
                     span{
                         @apply text-typography-paragraph-soft
@@ -709,7 +709,7 @@ html{
                 @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
 
                 h3{
-                    @apply text-lg leading-[30px] font-semibold mb-2;
+                    @apply text-lg font-semibold mb-2;
                 }
                 p{
                     @apply text-typography-paragraph-soft;
@@ -724,7 +724,7 @@ html{
         @apply nt-max-container text-center;
 
         h3{
-            @apply text-container-text-primary text-lg leading-[30px]
+            @apply text-container-text-primary text-lg
         }
         h2{
             @apply text-typography-heading text-lg_2x font-medium;
@@ -739,7 +739,7 @@ html{
                     @apply mx-auto;
                 }
                 h1{
-                    @apply text-typography-sub-heading text-lg leading-[30px] font-semibold mt-4;
+                    @apply text-typography-sub-heading text-lg font-semibold mt-4;
                 }
                 p{
                     @apply text-typography-caption-soft;
@@ -780,6 +780,62 @@ html{
                 }
             }
         }
+    }
+
+    .nt-review-container{
+        @apply nt-max-container flex flex-col gap-6;
+
+        .nt-review-wrap{
+            @apply py-20 px-12 text-center;
+
+            .nt-header-wrap{
+                @apply w-[585px] mx-auto;
+
+                h1{
+                    @apply text-typography-heading text-lg_3x font-semibold mb-3;
+                }
+
+                .nt-svg-wrap{
+                    @apply flex gap-1 justify-center items-center;
+                    
+                    p{
+                        @apply ml-2 text-typography-caption-soft text-md font-medium;
+                    }
+                }
+            }
+
+            .nt-body-wrap{
+                @apply flex items-center gap-[64px] mt-6;
+                
+                svg{
+                    @apply size-[42px]   rounded-[21px];
+                }
+                .nt-left-svg{
+                    @apply bg-default-icon-gray;
+                }
+                .nt-right-svg{
+                    @apply bg-default-icon-primary;
+                }
+                
+                
+            }
+            .nt-review-img{
+                @apply w-[196px] flex flex-col justify-center items-center gap-[6px] mx-auto mt-6 ;
+
+                img{
+                    @apply ring-4 rounded-full ring-component-fill-primary;
+                }
+
+                h3{
+                    @apply text-typography-sub-heading text-lg;
+                }
+
+                .nt-svg-wrap{
+                    @apply flex gap-[8.667px]
+                }
+            }
+        }
+
     }
 
     

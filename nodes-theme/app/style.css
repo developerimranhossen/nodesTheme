@@ -89,7 +89,7 @@ html {
 }
 
 .nt-logo-container {
-  @apply nt-max-container flex justify-between items-center bg-background-stroke-middle;
+  @apply nt-max-container flex justify-between items-center;
 }
 
 .nt-program-container {
@@ -537,7 +537,7 @@ html {
   @apply text-typography-sub-heading text-xs font-medium;
 }
 .nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container h2 {
-  @apply text-typography-heading text-lg leading-[30px] font-semibold;
+  @apply text-typography-heading text-lg font-semibold;
 }
 .nt-page-about .nt-hero-container .nt-body-container .nt-body-card-wrap .nt-hero-card-container span {
   @apply text-typography-paragraph-soft;
@@ -548,9 +548,111 @@ html {
 .nt-page-about .nt-quality-container h1 {
   @apply w-[690px] text-typography-heading text-lg_3x font-medium mb-[50px];
 }
-.nt-page-about .nt-quality-container .nt-nt-quality-wrap {
+.nt-page-about .nt-quality-container .nt-quality-wrap {
   @apply flex gap-6;
 }
-.nt-page-about .nt-quality-container .nt-nt-quality-wrap .nt-quality-card-container {
-  @apply w-[88px] h-[260px] p-6 border  rounded-[24px] hidden;
+.nt-page-about .nt-quality-container .nt-quality-wrap .nt-quality-card-container {
+  @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
+}
+.nt-page-about .nt-quality-container .nt-quality-wrap .nt-quality-card-container h3 {
+  @apply text-lg font-semibold mb-2;
+}
+.nt-page-about .nt-quality-container .nt-quality-wrap .nt-quality-card-container p {
+  @apply text-typography-paragraph-soft;
+}
+.nt-page-about .nt-team-container {
+  @apply nt-max-container text-center;
+}
+.nt-page-about .nt-team-container h3 {
+  @apply text-container-text-primary text-lg;
+}
+.nt-page-about .nt-team-container h2 {
+  @apply text-typography-heading text-lg_2x font-medium;
+}
+.nt-page-about .nt-team-container .nt-card-wrap {
+  @apply flex justify-between items-center self-stretch mt-10;
+}
+.nt-page-about .nt-team-container .nt-card-wrap .nt-team-card {
+  @apply w-[280px];
+}
+.nt-page-about .nt-team-container .nt-card-wrap .nt-team-card img {
+  @apply mx-auto;
+}
+.nt-page-about .nt-team-container .nt-card-wrap .nt-team-card h1 {
+  @apply text-typography-sub-heading text-lg font-semibold mt-4;
+}
+.nt-page-about .nt-team-container .nt-card-wrap .nt-team-card p {
+  @apply text-typography-caption-soft;
+}
+.nt-page-about .nt-member-container {
+  @apply nt-max-container flex gap-6;
+}
+.nt-page-about .nt-member-container .nt-text-wrap {
+  @apply w-[588px];
+}
+.nt-page-about .nt-member-container .nt-text-wrap h1 {
+  @apply text-typography-heading text-lg_3x font-medium mb-6;
+}
+.nt-page-about .nt-member-container .nt-text-wrap p {
+  @apply text-typography-body-soft text-md mb-10;
+}
+.nt-page-about .nt-member-container .nt-text-wrap button {
+  @apply border border-component-stroke-secondary text-component-text-secondary;
+}
+.nt-page-about .nt-member-container .nt-card-wrap {
+  @apply flex items-center gap-6;
+}
+.nt-page-about .nt-member-container .nt-card-wrap .nt-left-card {
+  @apply flex flex-col gap-6;
+}
+.nt-page-about .nt-member-container .nt-card-wrap .nt-card-container {
+  @apply w-[282px] h-[200px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
+}
+.nt-page-about .nt-member-container .nt-card-wrap .nt-card-container h1 {
+  @apply text-white text-lg_4x font-semibold;
+}
+.nt-page-about .nt-member-container .nt-card-wrap .nt-card-container p {
+  @apply w-[133px] text-white text-md;
+}
+.nt-page-about .nt-review-container {
+  @apply nt-max-container flex flex-col gap-6;
+}
+.nt-page-about .nt-review-container .nt-review-wrap {
+  @apply py-20 px-12 text-center;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-header-wrap {
+  @apply w-[585px] mx-auto;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-header-wrap h1 {
+  @apply text-typography-heading text-lg_3x font-semibold mb-3;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-header-wrap .nt-svg-wrap {
+  @apply flex gap-1 justify-center items-center;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-header-wrap .nt-svg-wrap p {
+  @apply ml-2 text-typography-caption-soft text-md font-medium;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-body-wrap {
+  @apply flex items-center gap-[64px] mt-6;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-body-wrap svg {
+  @apply size-[42px]   rounded-[21px];
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-body-wrap .nt-left-svg {
+  @apply bg-default-icon-gray;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-body-wrap .nt-right-svg {
+  @apply bg-default-icon-primary;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-review-img {
+  @apply w-[196px] flex flex-col justify-center items-center gap-[6px] mx-auto mt-6;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-review-img img {
+  @apply ring-4 rounded-full ring-component-fill-primary;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-review-img h3 {
+  @apply text-typography-sub-heading text-lg;
+}
+.nt-page-about .nt-review-container .nt-review-wrap .nt-review-img .nt-svg-wrap {
+  @apply flex gap-[8.667px];
 }/*# sourceMappingURL=style.css.map */
