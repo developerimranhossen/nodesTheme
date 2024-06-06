@@ -838,7 +838,38 @@ html{
 
     }
 
+    .nt-message-container{
+        @apply nt-max-container flex gap-6;
+
+        .nt-left{
+            @apply w-[588px];
+            h1{
+                @apply text-typography-heading text-lg_3x font-medium mt-10;
+            }
+            p{
+                @apply text-typography-paragraph-soft text-md mt-2;
+            }
+        }
+        .nt-right{
+            @apply w-[588px];
+
+            h3{
+                @apply text-component-text-primary text-lg font-semibold mb-6;
+            }
+            form{
+                @apply flex flex-col gap-8;
+
+                .nt-input-wrap{
+                    @apply flex flex-col gap-[18px];
+                }
+                
+            }
+        }
+    }
+
     
 }
+
+
 
 //end about page

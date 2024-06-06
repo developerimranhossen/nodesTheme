@@ -655,4 +655,28 @@ html {
 }
 .nt-page-about .nt-review-container .nt-review-wrap .nt-review-img .nt-svg-wrap {
   @apply flex gap-[8.667px];
+}
+.nt-page-about .nt-message-container {
+  @apply nt-max-container flex gap-6;
+}
+.nt-page-about .nt-message-container .nt-left {
+  @apply w-[588px];
+}
+.nt-page-about .nt-message-container .nt-left h1 {
+  @apply text-typography-heading text-lg_3x font-medium mt-10;
+}
+.nt-page-about .nt-message-container .nt-left p {
+  @apply text-typography-paragraph-soft text-md mt-2;
+}
+.nt-page-about .nt-message-container .nt-right {
+  @apply w-[588px];
+}
+.nt-page-about .nt-message-container .nt-right h3 {
+  @apply text-component-text-primary text-lg font-semibold mb-6;
+}
+.nt-page-about .nt-message-container .nt-right form {
+  @apply flex flex-col gap-8;
+}
+.nt-page-about .nt-message-container .nt-right form .nt-input-wrap {
+  @apply flex flex-col gap-[18px];
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 import LogoSection from "../../components/LogoSection";
 import Hero from "../../components/about/Hero";
 import Member from "../../components/about/Member";
+import MessageSection from "../../components/about/MessageSection";
 import Quality from "../../components/about/Quality";
 import Review from "../../components/about/Review";
 import Team from "../../components/about/Team";
@@ -56,6 +57,14 @@ function Aboutpage() {
         </div>
       </section>
       {/* End Review */}
+      <section className="nt-section nt-message">
+        <div className="nt-row">
+          <div className="nt-col nt-message-A">
+            <MessageSection />
+          </div>
+        </div>
+      </section>
+      {/* End Message */}
     </div>
   );
 }
