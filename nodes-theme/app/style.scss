@@ -877,7 +877,51 @@ html{
     @apply nt-max-container;
 
     .nt-contact-wrap{
-        @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px]
+        @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px];
+
+        .nt-touch-container{
+            @apply w-[564px];
+
+            h1{
+                @apply text-typography-heading text-lg_2x font-medium;
+            }
+    
+            p{
+                @apply text-gray-500 text-md;
+            }
+            .nt-input-wrap{
+                @apply space-y-[18px];
+
+                .nt-name-wrap{
+                    @apply flex gap-[18px] mt-6;
+    
+                    div{
+                        @apply w-full
+                    }
+                }
+                .nt-label-wrap{
+                    @apply mb-3;
+
+                    label{
+                        @apply text-component-text-dark self-start text-xs font-medium;
+                    }
+                }
+                .nt-select-wrap{
+                    @apply flex h-[48px] gap-1  items-center self-stretch border border-component-stroke-dark-soft rounded-lg;
+
+                    select{
+                        @apply py-2 px-2.5 bg-component-fill-primary rounded-lg text-component-text-light-fixed;
+                    }
+                    input{
+                        @apply text-component-text-dark p-1 placeholder:text-component-text-gray indent-2.5 text-xs font-medium border-l-0 w-full focus:outline-none;
+                    }
+                }
+                
+            }
+            .nt-send-wrap{
+                @apply mt-8;
+            }
+        }
     }
 }
 //end contact page

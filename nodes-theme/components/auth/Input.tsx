@@ -19,7 +19,7 @@ function Input({ data }) {
         className={`text-component-text-dark ${
           data.type === "checkbox"
             ? "size-6"
-            : "h-[48px] p-1 border border-component-stroke-dark-soft placeholder:text- indent-2.5 rounded-lg"
+            : "h-[48px] p-1 border border-component-stroke-dark-soft placeholder:text-component-text-gray indent-2.5 rounded-lg"
         } text-xs font-medium `}
         id={data.label}
         type={data.type}
