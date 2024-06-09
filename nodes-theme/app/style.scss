@@ -927,5 +927,61 @@ html{
 //end contact page
 
 //start registration page
+.nt-registration-container{
+    @apply nt-max-container;
 
+    .nt-registration-wrap{
+        @apply p-6 border border-background-stroke-outermost rounded-[24px];
+
+        h1{
+            @apply text-center text-typography-heading text-lg_2x font-medium mb-3
+        }
+        p{
+            @apply text-center text-gray-500 text-md;
+        }
+        .nt-button-wrap{
+            @apply text-xs font-medium mt-6 mb-6 flex gap-2;
+            
+            .nt-prents-button{
+                @apply bg-container-fill-primary text-component-text-light-fixed w-full;
+            }
+            .nt-students-button{
+                @apply bg-component-fill-tertiary-soft text-component-text-primary w-full;
+            }
+        }
+        .nt-form-container{
+            .nt-left-wrap{
+                @apply space-y-[18px];
+
+                .nt-name-wrap{
+                    @apply flex gap-[18px] mt-6;
+    
+                    div{
+                        @apply w-full
+                    }
+                }
+            }
+
+            .nt-label-wrap{
+                @apply mb-3;
+
+                label{
+                    @apply text-component-text-dark self-start text-xs font-medium;
+                }
+            }
+            .nt-select-wrap{
+                @apply flex h-[48px] gap-1  items-center self-stretch border border-component-stroke-dark-soft rounded-lg;
+
+                select{
+                    @apply py-2 px-2.5 bg-component-fill-primary rounded-lg text-component-text-light-fixed;
+                }
+                input{
+                    @apply text-component-text-dark p-1 placeholder:text-component-text-gray indent-2.5 text-xs font-medium border-l-0 w-full focus:outline-none;
+                }
+            }
+            
+        }
+
+    }
+}
 //end registration page
