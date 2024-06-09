@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/elements/Hero";
+import TaskSection from "../../components/TaskSection";
 
 function ElementsPage() {
   return (
@@ -12,6 +13,14 @@ function ElementsPage() {
         </div>
       </section>
       {/* End Hero */}
+      <section className="nt-section nt-task">
+        <div className="nt-row">
+          <div className="nt-col nt-task-A">
+            <TaskSection />
+          </div>
+        </div>
+      </section>
+      {/* End Tasks */}
     </div>
   );
 }
