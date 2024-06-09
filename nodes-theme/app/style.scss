@@ -2,6 +2,26 @@
 html{
     @apply bg-background-fill-surface;
 }
+.nt-hero-card-container{
+    @apply flex flex-col items-start w-[384px];
+
+    hr{
+        @apply h-[2px] border-0 bg-background-stroke-inner w-full;
+    }
+    p{
+        @apply flex items-center gap-[6px];
+
+        span{
+            @apply text-typography-sub-heading text-xs font-medium ;
+        }
+    }
+    h2{
+        @apply text-typography-heading text-lg font-semibold;
+    }
+    span{
+        @apply text-typography-paragraph-soft
+    }
+}
 // Layout
 // Content
 // Forms
@@ -659,35 +679,14 @@ html{
             @apply w-[1440px] h-[487px] mx-auto relative mt-5;
         }
         .nt-body-container{
-            @apply nt-max-container;
+            @apply nt-max-container flex flex-col gap-[60px];
 
             h1{
                 @apply text-typography-display text-lg_3x;
             }
             .nt-body-card-wrap{
 
-                @apply flex items-start gap-6 flex-wrap;
-
-                .nt-hero-card-container{
-                    @apply flex flex-col items-start w-[384px] gap-3 mt-[60px];
-    
-                    hr{
-                        @apply h-[2px] border-0 bg-background-stroke-inner w-full;
-                    }
-                    p{
-                        @apply flex items-center gap-[6px];
-
-                        span{
-                            @apply text-typography-sub-heading text-xs font-medium ;
-                        }
-                    }
-                    h2{
-                        @apply text-typography-heading text-lg font-semibold;
-                    }
-                    span{
-                        @apply text-typography-paragraph-soft
-                    }
-                }
+                @apply flex items-start gap-x-6 gap-y-[60px] flex-wrap;
             }
         }
         
@@ -1008,5 +1007,6 @@ html{
           @apply text-typography-paragraph-soft text-center text-[18px] leading-7;  
         }
     }
+    
 }
 //end elements page
