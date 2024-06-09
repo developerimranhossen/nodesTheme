@@ -13,6 +13,7 @@ import Quality from "../../components/about/Quality";
 import Member from "../../components/about/Member";
 import NumberCard from "../../components/about/NumberCard";
 import TeamCard from "../../components/about/TeamCard";
+import Review from "../../components/about/Review";
 
 function ElementsPage() {
   return (
@@ -104,6 +105,14 @@ function ElementsPage() {
         </div>
       </section>
       {/* End Member */}
+      <section className="nt-section nt-review">
+        <div className="nt-row">
+          <div className="nt-col nt-review-A">
+            <Review />
+          </div>
+        </div>
+      </section>
+      {/* End Review */}
     </div>
   );
 }

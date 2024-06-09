@@ -784,7 +784,7 @@ html{
         @apply nt-max-container flex flex-col gap-6;
 
         .nt-review-wrap{
-            @apply py-20 px-12 text-center;
+            @apply py-20 px-12 text-center bg-container-fill-tertiary-soft rounded-[32px];
 
             .nt-header-wrap{
                 @apply w-[585px] mx-auto;
