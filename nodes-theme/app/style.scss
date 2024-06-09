@@ -39,7 +39,7 @@ html{
             a[href^="sign-in"] {
                 @apply text-component-text-primary
             }
-            a[href^="/sign-up"]{
+            a[href^="/registration"]{
                 @apply nt-btn text-component-text-light-fixed bg-component-fill-primary
             }
         }
@@ -928,7 +928,7 @@ html{
 
 //start registration page
 .nt-registration-container{
-    @apply nt-max-container;
+    @apply nt-max-container text-center;
 
     .nt-registration-wrap{
         @apply p-6 border border-background-stroke-outermost rounded-[24px];
@@ -950,38 +950,47 @@ html{
             }
         }
         .nt-form-container{
-            .nt-left-wrap{
-                @apply space-y-[18px];
+            form{
+                @apply flex gap-10;
 
-                .nt-name-wrap{
-                    @apply flex gap-[18px] mt-6;
+                .nt-left-wrap{
+                    @apply space-y-[18px] w-[556px] mt-6;
     
-                    div{
-                        @apply w-full
+                    .nt-name-wrap{
+                        @apply flex gap-[18px];
+        
+                        div{
+                            @apply w-full
+                        }
+                    }
+                    .nt-label-wrap{
+                        @apply mb-3;
+        
+                        label{
+                            @apply text-component-text-dark self-start text-xs font-medium;
+                        }
+                    }
+                    .nt-select-wrap{
+                        @apply flex h-[48px] gap-1  items-center self-stretch border border-component-stroke-dark-soft rounded-lg;
+        
+                        select{
+                            @apply py-2 px-2.5 bg-component-fill-primary rounded-lg text-component-text-light-fixed;
+                        }
+                        input{
+                            @apply text-component-text-dark p-1 placeholder:text-component-text-gray indent-2.5 text-xs font-medium border-l-0 w-full focus:outline-none;
+                        }
                     }
                 }
-            }
-
-            .nt-label-wrap{
-                @apply mb-3;
-
-                label{
-                    @apply text-component-text-dark self-start text-xs font-medium;
+                .nt-right-wrap{
+                    @apply space-y-[18px] w-[556px] mt-6;
                 }
             }
-            .nt-select-wrap{
-                @apply flex h-[48px] gap-1  items-center self-stretch border border-component-stroke-dark-soft rounded-lg;
-
-                select{
-                    @apply py-2 px-2.5 bg-component-fill-primary rounded-lg text-component-text-light-fixed;
-                }
-                input{
-                    @apply text-component-text-dark p-1 placeholder:text-component-text-gray indent-2.5 text-xs font-medium border-l-0 w-full focus:outline-none;
-                }
-            }
-            
+    
         }
 
+    }
+    .nt-submit-button{
+        @apply bg-component-fill-primary w-[268px] text-component-fill-light-fixed mt-8;
     }
 }
 //end registration page

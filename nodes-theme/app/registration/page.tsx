@@ -1,5 +1,6 @@
 import CustomButton from "../../components/CustomButton";
 import Input from "../../components/auth/Input";
+import TextArea from "../../components/auth/TextArea";
 
 function RegistrationPage() {
   return (
@@ -33,34 +34,56 @@ function RegistrationPage() {
                     }}
                   />
                 </div>
-                
               </div>
               <div>
-                  <Input
-                    data={{
-                      type: "text",
-                      label: "Email",
-                      placeholder: "Enter email",
-                    }}
-                  />
+                <Input
+                  data={{
+                    type: "text",
+                    label: "Email",
+                    placeholder: "Enter email",
+                  }}
+                />
+              </div>
+              <div>
+                <div className="nt-label-wrap">
+                  <label htmlFor="phone">Phone</label>
                 </div>
-                <div>
-              <div className="nt-label-wrap">
-                <label htmlFor="phone">Phone</label>
-              </div>
-              <div className="nt-select-wrap">
-                <select>
-                  <option>+88</option>
-                  <option>+60</option>
-                  <option>+96</option>
-                </select>
-                <input id="phone" type="number" placeholder="Enter phone" />
+                <div className="nt-select-wrap">
+                  <select>
+                    <option>+88</option>
+                    <option>+60</option>
+                    <option>+96</option>
+                  </select>
+                  <input id="phone" type="number" placeholder="Enter phone" />
+                </div>
               </div>
             </div>
+            <div className="nt-right-wrap">
+              <div>
+                <Input
+                  data={{
+                    type: "text",
+                    label: "Class",
+                    placeholder: "Select your class",
+                  }}
+                />
+              </div>
+              <TextArea
+                data={{
+                  label: "Address",
+                  placeholder: "Write address here...",
+                }}
+              />
+              <Input
+                data={{
+                  type: "checkbox",
+                  label: "You agree to our friendly privacy policy.",
+                }}
+              />
             </div>
-            <div className="nt-right-wrap"></div>
           </form>
         </div>
+        <CustomButton className="nt-submit-button">Send</CustomButton>
       </div>
     </div>
   );
