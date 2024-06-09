@@ -6,6 +6,7 @@ import DocuHorizontal from "../../public/docu-horizontal.png";
 import DocumentationCard from "../../components/DocumentationCard";
 import ProgramCard from "../../components/ProgramCard";
 import HeroCard from "../../components/about/HeroCard";
+import UseCasesSection from "../../components/UseCasesSection";
 
 function ElementsPage() {
   return (
@@ -29,19 +30,27 @@ function ElementsPage() {
       <section className="nt-section nt-cards">
         <div className="nt-row">
           <div className="nt-col nt-card-A">
-          <div className="flex gap-6 justify-center">
-            <DocumentationCard path={DocuHorizontal} size={"384"} />
-            <DocumentationCard path={DocuVerticalImg} size={"282"} />
-            <DocumentationCard path={DocuHorizontal} size={"486"} />
-          </div>
-          <div className="flex nt-max-container gap-6">
-            <ProgramCard />
-            <HeroCard />
-          </div>
+            <div className="nt-top-card-wrap">
+              <DocumentationCard path={DocuHorizontal} size={"384"} />
+              <DocumentationCard path={DocuVerticalImg} size={"282"} />
+              <DocumentationCard path={DocuHorizontal} size={"486"} />
+            </div>
+            <div className="nt-bottom-card-wrap">
+              <ProgramCard />
+              <HeroCard />
+            </div>
           </div>
         </div>
       </section>
       {/* End Cards */}
+      <section className="nt-section nt-use-case">
+        <div className="nt-row">
+          <div className="nt-col nt-userCase-A">
+            <UseCasesSection />
+          </div>
+        </div>
+      </section>
+      {/* End Use case */}
     </div>
   );
 }
