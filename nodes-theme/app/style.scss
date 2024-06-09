@@ -994,3 +994,19 @@ html{
     }
 }
 //end registration page
+
+//start elelments page
+.nt-elelments-hero{
+    @apply py-20;
+    .nt-header-wrap{
+        @apply flex w-[996px] flex-col items-center gap-3 mx-auto relative;
+
+        h1{
+            @apply text-typography-heading text-center text-[64px] font-medium leading-[84px];
+        }
+        p{
+          @apply text-typography-paragraph-soft text-center text-[18px] leading-7;  
+        }
+    }
+}
+//end elements page
