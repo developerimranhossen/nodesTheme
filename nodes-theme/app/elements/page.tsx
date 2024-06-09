@@ -8,6 +8,11 @@ import ProgramCard from "../../components/ProgramCard";
 import HeroCard from "../../components/about/HeroCard";
 import UseCasesSection from "../../components/UseCasesSection";
 import BlogCard from "../../components/BlogCard";
+import QualityCard from "../../components/about/QualityCard";
+import Quality from "../../components/about/Quality";
+import Member from "../../components/about/Member";
+import NumberCard from "../../components/about/NumberCard";
+import TeamCard from "../../components/about/TeamCard";
 
 function ElementsPage() {
   return (
@@ -64,6 +69,41 @@ function ElementsPage() {
         </div>
       </section>
       {/* End Blog Card */}
+      <section className="nt-section nt-quality-card">
+        <div className="nt-row">
+          <div className="nt-col nt-quality-card-A">
+            <QualityCard green={true} />
+            <QualityCard purple={true} />
+          </div>
+        </div>
+      </section>
+      {/* End Use case */}
+      <section className="nt-section nt-member">
+        <div className="nt-row">
+          <div className="nt-col nt-member-A">
+            <div className="nt-right-card">
+              <TeamCard />
+            </div>
+            <div className="nt-card-wrap">
+              <div className="nt-left-card">
+                <NumberCard green={true}>
+                  <h1>10K+</h1>
+                  <p>Companies use Sense</p>
+                </NumberCard>
+                <NumberCard puplish={true}>
+                  <h1>$5M+</h1>
+                  <p>Raised in Series</p>
+                </NumberCard>
+              </div>
+              <NumberCard red={true}>
+                <h1>2015</h1>
+                <p>Year founded</p>
+              </NumberCard>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* End Member */}
     </div>
   );
 }

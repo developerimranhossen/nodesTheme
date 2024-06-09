@@ -22,6 +22,17 @@ html{
         @apply text-typography-paragraph-soft
     }
 }
+.nt-quality-card-container{
+    @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
+
+    h3{
+        @apply text-lg font-semibold mb-2;
+    }
+    p{
+        @apply text-typography-paragraph-soft;
+    }
+}
+
 // Layout
 // Content
 // Forms
@@ -703,18 +714,6 @@ html{
             
             @apply flex gap-6;
 
-            
-            .nt-quality-card-container{
-                @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
-
-                h3{
-                    @apply text-lg font-semibold mb-2;
-                }
-                p{
-                    @apply text-typography-paragraph-soft;
-                }
-            }
-
         }
         
     }
@@ -770,7 +769,7 @@ html{
             }
 
             .nt-card-container{
-                @apply w-[282px] h-[200px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
+                @apply w-[282px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
                 h1{
                     @apply text-white text-lg_4x font-semibold;
                 }
@@ -1019,6 +1018,35 @@ html{
 
     .nt-blog-card-A{
         @apply flex gap-6 nt-max-container; 
+    }
+
+    .nt-quality-card-A{
+        @apply flex gap-6 nt-max-container;
+
+        div{
+            @apply w-[588px]
+        }
+        
+    }
+    .nt-member-A{
+        @apply flex justify-between nt-max-container;
+        .nt-card-wrap{
+            @apply flex items-center gap-6;
+
+            .nt-left-card{
+                @apply flex flex-col gap-6;
+            }
+
+            .nt-card-container{
+                @apply w-[282px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
+                h1{
+                    @apply text-white text-lg_4x font-semibold;
+                }
+                p{
+                    @apply w-[133px] text-white text-md;
+                }
+            }
+        }
     }
 }
 //end elements page
