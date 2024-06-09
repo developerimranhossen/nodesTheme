@@ -7,6 +7,7 @@ import DocumentationCard from "../../components/DocumentationCard";
 import ProgramCard from "../../components/ProgramCard";
 import HeroCard from "../../components/about/HeroCard";
 import UseCasesSection from "../../components/UseCasesSection";
+import BlogCard from "../../components/BlogCard";
 
 function ElementsPage() {
   return (
@@ -51,6 +52,18 @@ function ElementsPage() {
         </div>
       </section>
       {/* End Use case */}
+      <section className="nt-section nt-blog-card">
+        <div className="nt-row">
+          <div className="nt-col nt-blog-card-A">
+            <BlogCard bigCard={true} />
+            <div className="">
+              <BlogCard smallCard={true} />
+              <BlogCard flexCard={true} />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* End Blog Card */}
     </div>
   );
 }
