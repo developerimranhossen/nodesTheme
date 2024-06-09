@@ -2,6 +2,37 @@
 html{
     @apply bg-background-fill-surface;
 }
+.nt-hero-card-container{
+    @apply flex flex-col items-start w-[384px];
+
+    hr{
+        @apply h-[2px] border-0 bg-background-stroke-inner w-full;
+    }
+    p{
+        @apply flex items-center gap-[6px];
+
+        span{
+            @apply text-typography-sub-heading text-xs font-medium ;
+        }
+    }
+    h2{
+        @apply text-typography-heading text-lg font-semibold;
+    }
+    span{
+        @apply text-typography-paragraph-soft
+    }
+}
+.nt-quality-card-container{
+    @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
+
+    h3{
+        @apply text-lg font-semibold mb-2;
+    }
+    p{
+        @apply text-typography-paragraph-soft;
+    }
+}
+
 // Layout
 // Content
 // Forms
@@ -39,7 +70,7 @@ html{
             a[href^="sign-in"] {
                 @apply text-component-text-primary
             }
-            a[href^="/sign-up"]{
+            a[href^="/registration"]{
                 @apply nt-btn text-component-text-light-fixed bg-component-fill-primary
             }
         }
@@ -659,35 +690,14 @@ html{
             @apply w-[1440px] h-[487px] mx-auto relative mt-5;
         }
         .nt-body-container{
-            @apply nt-max-container;
+            @apply nt-max-container flex flex-col gap-[60px];
 
             h1{
                 @apply text-typography-display text-lg_3x;
             }
             .nt-body-card-wrap{
 
-                @apply flex items-start gap-6 flex-wrap;
-
-                .nt-hero-card-container{
-                    @apply flex flex-col items-start w-[384px] gap-3 mt-[60px];
-    
-                    hr{
-                        @apply h-[2px] border-0 bg-background-stroke-inner w-full;
-                    }
-                    p{
-                        @apply flex items-center gap-[6px];
-
-                        span{
-                            @apply text-typography-sub-heading text-xs font-medium ;
-                        }
-                    }
-                    h2{
-                        @apply text-typography-heading text-lg font-semibold;
-                    }
-                    span{
-                        @apply text-typography-paragraph-soft
-                    }
-                }
+                @apply flex items-start gap-x-6 gap-y-[60px] flex-wrap;
             }
         }
         
@@ -703,18 +713,6 @@ html{
         .nt-quality-wrap{
             
             @apply flex gap-6;
-
-            
-            .nt-quality-card-container{
-                @apply w-[588px] h-[260px] p-6 border  rounded-[24px];
-
-                h3{
-                    @apply text-lg font-semibold mb-2;
-                }
-                p{
-                    @apply text-typography-paragraph-soft;
-                }
-            }
 
         }
         
@@ -771,7 +769,7 @@ html{
             }
 
             .nt-card-container{
-                @apply w-[282px] h-[200px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
+                @apply w-[282px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
                 h1{
                     @apply text-white text-lg_4x font-semibold;
                 }
@@ -786,7 +784,7 @@ html{
         @apply nt-max-container flex flex-col gap-6;
 
         .nt-review-wrap{
-            @apply py-20 px-12 text-center;
+            @apply py-20 px-12 text-center bg-container-fill-tertiary-soft rounded-[32px];
 
             .nt-header-wrap{
                 @apply w-[585px] mx-auto;
@@ -877,7 +875,178 @@ html{
     @apply nt-max-container;
 
     .nt-contact-wrap{
-        @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px]
+        @apply border-2 border-background-stroke-middle flex gap-10 p-4 rounded-[20px];
+
+        .nt-touch-container{
+            @apply w-[564px];
+
+            h1{
+                @apply text-typography-heading text-lg_2x font-medium;
+            }
+    
+            p{
+                @apply text-gray-500 text-md;
+            }
+            .nt-input-wrap{
+                @apply space-y-[18px];
+
+                .nt-name-wrap{
+                    @apply flex gap-[18px] mt-6;
+    
+                    div{
+                        @apply w-full
+                    }
+                }
+                .nt-label-wrap{
+                    @apply mb-3;
+
+                    label{
+                        @apply text-component-text-dark self-start text-xs font-medium;
+                    }
+                }
+                .nt-select-wrap{
+                    @apply flex h-[48px] gap-1  items-center self-stretch border border-component-stroke-dark-soft rounded-lg;
+
+                    select{
+                        @apply py-2 px-2.5 bg-component-fill-primary rounded-lg text-component-text-light-fixed;
+                    }
+                    input{
+                        @apply text-component-text-dark p-1 placeholder:text-component-text-gray indent-2.5 text-xs font-medium border-l-0 w-full focus:outline-none;
+                    }
+                }
+                
+            }
+            .nt-send-wrap{
+                @apply mt-8;
+            }
+        }
     }
 }
 //end contact page
+
+//start registration page
+.nt-registration-container{
+    @apply nt-max-container text-center;
+
+    .nt-registration-wrap{
+        @apply p-6 border border-background-stroke-outermost rounded-[24px];
+
+        h1{
+            @apply text-center text-typography-heading text-lg_2x font-medium mb-3
+        }
+        p{
+            @apply text-center text-gray-500 text-md;
+        }
+        .nt-button-wrap{
+            @apply text-xs font-medium mt-6 mb-6 flex gap-2;
+            
+            .nt-prents-button{
+                @apply bg-container-fill-primary text-component-text-light-fixed w-full;
+            }
+            .nt-students-button{
+                @apply bg-component-fill-tertiary-soft text-component-text-primary w-full;
+            }
+        }
+        .nt-form-container{
+            form{
+                @apply flex gap-10;
+
+                .nt-left-wrap{
+                    @apply space-y-[18px] w-[556px] mt-6;
+    
+                    .nt-name-wrap{
+                        @apply flex gap-[18px];
+        
+                        div{
+                            @apply w-full
+                        }
+                    }
+                    .nt-label-wrap{
+                        @apply mb-3;
+        
+                        label{
+                            @apply text-component-text-dark self-start text-xs font-medium;
+                        }
+                    }
+                    .nt-select-wrap{
+                        @apply flex h-[48px] gap-1  items-center self-stretch border border-component-stroke-dark-soft rounded-lg;
+        
+                        select{
+                            @apply py-2 px-2.5 bg-component-fill-primary rounded-lg text-component-text-light-fixed;
+                        }
+                        input{
+                            @apply text-component-text-dark p-1 placeholder:text-component-text-gray indent-2.5 text-xs font-medium border-l-0 w-full focus:outline-none;
+                        }
+                    }
+                }
+                .nt-right-wrap{
+                    @apply space-y-[18px] w-[556px] mt-6;
+                }
+            }
+    
+        }
+
+    }
+    .nt-submit-button{
+        @apply bg-component-fill-primary w-[268px] text-component-fill-light-fixed mt-8;
+    }
+}
+//end registration page
+
+//start elelments page
+.nt-page-about{
+    .nt-elelments-hero{
+        @apply pt-20;
+        .nt-header-wrap{
+            @apply flex w-[996px] flex-col items-center gap-3 mx-auto relative;
+    
+            h1{
+                @apply text-typography-heading text-center text-[64px] font-medium leading-[84px];
+            }
+            p{
+              @apply text-typography-paragraph-soft text-center text-[18px] leading-7;  
+            }
+        }
+        
+    }
+    .nt-top-card-wrap{
+        @apply flex gap-6 justify-center;
+    }
+    .nt-bottom-card-wrap{
+        @apply flex nt-max-container gap-6;
+    }
+
+    .nt-blog-card-A{
+        @apply flex gap-6 nt-max-container; 
+    }
+
+    .nt-quality-card-A{
+        @apply flex gap-6 nt-max-container;
+
+        div{
+            @apply w-[588px]
+        }
+        
+    }
+    .nt-member-A{
+        @apply flex justify-between nt-max-container;
+        .nt-card-wrap{
+            @apply flex items-center gap-6;
+
+            .nt-left-card{
+                @apply flex flex-col gap-6;
+            }
+
+            .nt-card-container{
+                @apply w-[282px] rounded-[20px] flex flex-col gap-1 justify-center items-center text-center;
+                h1{
+                    @apply text-white text-lg_4x font-semibold;
+                }
+                p{
+                    @apply w-[133px] text-white text-md;
+                }
+            }
+        }
+    }
+}
+//end elements page

@@ -32,7 +32,7 @@ function Navbar() {
             Sign in
           </Link>
           <Link
-            href="/sign-up"
+            href="/registration"
           >
             Sign up
           </Link>

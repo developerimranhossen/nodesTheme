@@ -11,7 +11,7 @@ function TextArea({ data }) {
           {data.label}
         </label>
         <textarea
-          className="h-[99px] p-3.5 placeholder:text- indent-2.5"
+          className="h-[99px] p-3.5 placeholder:text- indent-2.5 border border-component-stroke-dark-soft rounded-lg"
           id={data.label}
           placeholder={data.placeholder}
         />
