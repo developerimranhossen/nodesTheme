@@ -7,6 +7,8 @@ function Footer() {
           <p>
             How do you create compelling presentations that wow your colleagues
             and impress your managers?
+            How do you create compelling presentations that wow your colleagues
+            and impress your managers?
           </p>
           <div className="nt-icon-container">
             <div className="nt-icno-wrap">
