@@ -17,6 +17,7 @@ import Review from "../../components/about/Review";
 import ContactCard from "../../components/ContactCard";
 import RegistrationCard from "../../components/RegistrationCard";
 import Faq from "../../components/Faq";
+import Pricing from "../../components/Pricing";
 
 function ElementsPage() {
   return (
@@ -132,6 +133,14 @@ function ElementsPage() {
         </div>
       </section>
       {/* End Registration  */}
+      <section className="nt-section nt-pricing">
+        <div className="nt-row">
+          <div className="nt-col nt-pricing-A">
+            <Pricing />
+          </div>
+        </div>
+      </section>
+      {/* End Pricing */}
       <section className="nt-section nt-faq">
         <div className="nt-row">
           <div className="nt-col nt-faq-A">
