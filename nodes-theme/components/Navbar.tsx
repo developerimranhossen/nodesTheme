@@ -4,8 +4,6 @@ import CustomLink from "./CustomLink";
 const navs = [
   {name: "Home", path: "/"},
   {name: "About", path: "/about"},
-  {name: "Services", path: "/services"},
-  {name: "Pages", path: "/pages"},
   {name: "Blogs", path: "/blogs"},
   {name: "Elements", path: "/elements"},
   {name: "Contact", path: "/contact"},
