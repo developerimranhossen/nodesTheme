@@ -62,16 +62,16 @@ html{
         .nt-logo {
             @apply text-[24px] font-medium bg-orchid-twilight bg-clip-text text-fill-color-transparent
         }
-        ul{
-            @apply flex justify-center items-center gap-8 text-center
+        .nt-main-ul{
+            @apply flex justify-center items-center gap-8 text-center max-lg:hidden;
         }
         .nt-nav-link-wrap{
             @apply flex items-center gap-6;
             a[href^="sign-in"] {
-                @apply text-component-text-primary
+                @apply text-component-text-primary max-lg:hidden;
             }
             a[href^="/registration"]{
-                @apply nt-btn text-component-text-light-fixed bg-component-fill-primary
+                @apply nt-btn text-component-text-light-fixed bg-component-fill-primary max-lg:hidden;
             }
         }
     }
