@@ -15,6 +15,8 @@ import NumberCard from "../../components/about/NumberCard";
 import TeamCard from "../../components/about/TeamCard";
 import Review from "../../components/about/Review";
 import ContactCard from "../../components/ContactCard";
+import RegistrationCard from "../../components/RegistrationCard";
+import Faq from "../../components/Faq";
 
 function ElementsPage() {
   return (
@@ -121,7 +123,23 @@ function ElementsPage() {
           </div>
         </div>
       </section>
-    {/* End ContactCard  */}
+      {/* End ContactCard  */}
+      <section className="nt-section nt-registration">
+        <div className="nt-row">
+          <div className="nt-col nt-registration-A">
+            <RegistrationCard />
+          </div>
+        </div>
+      </section>
+      {/* End Registration  */}
+      <section className="nt-section nt-faq">
+        <div className="nt-row">
+          <div className="nt-col nt-faq-A">
+            <Faq />
+          </div>
+        </div>
+      </section>
+      {/* End FAQ */}
     </div>
   );
 }
